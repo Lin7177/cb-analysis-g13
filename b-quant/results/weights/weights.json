@@ -1,0 +1,160 @@
+{
+  "method": "Fama-MacBeth (Newey-West t) + RankIC/ICIR, monthly cross-sections, label = forward ~120-session return under a -15% drawdown-stop policy (mandate: no leverage, drawdown-averse); raw-return label kept as comparison",
+  "exclusions": {
+    "our_bonds": [
+      "111002.SH",
+      "113625.SH",
+      "113633.SH",
+      "113646.SH",
+      "113655.SH",
+      "113659.SH",
+      "113670.SH",
+      "113693.SH",
+      "113703.SH",
+      "123072.SZ",
+      "123154.SZ",
+      "123183.SZ",
+      "123229.SZ",
+      "123235.SZ",
+      "123250.SZ",
+      "127044.SZ",
+      "127047.SZ",
+      "127069.SZ"
+    ],
+    "price_range": [
+      85,
+      260
+    ],
+    "min_remaining_scale_yi": 2.0
+  },
+  "coverage": {
+    "months": 43,
+    "avg_bonds_per_month": 399.16279069767444,
+    "first_month": "2022-06-30 00:00:00",
+    "last_month": "2025-12-31 00:00:00"
+  },
+  "fm_slopes_mean": {
+    "rating_ord": 0.0881,
+    "solv": 0.00174,
+    "low_prem": -0.02687,
+    "debt_cov": 0.28825,
+    "link": -0.03163,
+    "dd20": 0.00175,
+    "turn": -0.12827,
+    "lossfreq": 0.02463,
+    "resid": -0.14924
+  },
+  "fm_newey_west_t": {
+    "rating_ord": 1.82,
+    "solv": 0.193,
+    "low_prem": -1.073,
+    "debt_cov": 6.661,
+    "link": -2.388,
+    "dd20": 0.134,
+    "turn": -4.586,
+    "lossfreq": 1.128,
+    "resid": -5.058
+  },
+  "rank_ic_mean": {
+    "rating_ord": 0.11481,
+    "solv": -0.05848,
+    "low_prem": -0.27557,
+    "debt_cov": 0.41787,
+    "link": 0.05702,
+    "dd20": 0.18098,
+    "turn": -0.35571,
+    "lossfreq": 0.08698,
+    "resid": -0.15021
+  },
+  "rank_ic_ir": {
+    "rating_ord": 0.563,
+    "solv": -0.751,
+    "low_prem": -3.073,
+    "debt_cov": 2.652,
+    "link": 0.531,
+    "dd20": 1.376,
+    "turn": -2.344,
+    "lossfreq": 0.526,
+    "resid": -1.327
+  },
+  "weights": {
+    "feature_fm": {
+      "rating_ord": 0.14901473893112654,
+      "solv": 0.00293614892454702,
+      "low_prem": 0.045440453733721416,
+      "debt_cov": 0.48753940887902875,
+      "link": 0.053500901819749744,
+      "dd20": 0.002953207534584005,
+      "turn": 0.21695462701438376,
+      "lossfreq": 0.04166051316285876
+    },
+    "feature_ic": {
+      "rating_ord": 0.09965853022802662,
+      "solv": 0.0,
+      "low_prem": 0.0,
+      "debt_cov": 0.46963742728245383,
+      "link": 0.09396225106737063,
+      "dd20": 0.2436672672005896,
+      "turn": 0.0,
+      "lossfreq": 0.09307452422155933
+    },
+    "feature_final": {
+      "rating_ord": 0.12433663457957658,
+      "solv": 0.00146807446227351,
+      "low_prem": 0.022720226866860708,
+      "debt_cov": 0.47858841808074126,
+      "link": 0.07373157644356018,
+      "dd20": 0.1233102373675868,
+      "turn": 0.10847731350719188,
+      "lossfreq": 0.06736751869220904
+    },
+    "dimension": {
+      "D1": 0.1258047090418501,
+      "D2": 0.022720226866860708,
+      "D3": 0.47858841808074126,
+      "D4": 0.07373157644356018,
+      "D5": 0.23178755087477868,
+      "D6": 0.06736751869220904
+    }
+  },
+  "comparison_raw_return_label": {
+    "dimension": {
+      "D1": 0.03353032942664087,
+      "D2": 0.02462536139858084,
+      "D3": 0.5193255718625238,
+      "D4": 0.2029097285305872,
+      "D5": 0.12554798614167031,
+      "D6": 0.09406102263999694
+    },
+    "fm_slopes_mean": {
+      "rating_ord": -0.00073,
+      "solv": -0.01095,
+      "low_prem": 0.00858,
+      "debt_cov": 0.0737,
+      "link": -0.03609,
+      "dd20": 0.00624,
+      "turn": 0.0117,
+      "lossfreq": 0.02618,
+      "resid": -0.00716
+    }
+  },
+  "input_sha256": {
+    "cb_ratings.csv": "8ad525849d6a3ddb8de6d83f63f5cb90c0bc282f4713620b7c52499da7b77953",
+    "manifest.json": "39eb9b602a502bbddf7db760f13a922825ff16837e30c772ead33f66cfef3361",
+    "mkt_amount.csv.gz": "5fcd3f20eea61d4bb03eabe7b60b2e426ea1f88b09ba3c16d1e8dad30a357e42",
+    "mkt_beta.csv.gz": "36b95000a22bfad8b92ef460b6c4c8b8d116056fc11e4250c8fcfb8892da1397",
+    "mkt_cb_corr.csv.gz": "e075da0673821ea896b777315b6e6b1e3320c9d0e11bed8179070c5de0629ef5",
+    "mkt_current_ratio.csv.gz": "9a0ef905dcca3e5f1b7ba2d17be2b68b859458f0216aea4e61448ac258008dda",
+    "mkt_downrev_count.csv.gz": "97445e50103d9526509d8d14ab28078c80901799b83e01f79da9b08e5e1cca26",
+    "mkt_equity_to_assets.csv.gz": "19ec0fce1a9416246e95aedef56bc4b57c483c47df2cae8192e86051d098bae8",
+    "mkt_force_redeem_phase.csv.gz": "4cddf195296430c144903072b974bdd8520c918f31860482f3b158997ed0654f",
+    "mkt_guaranteed_price.csv.gz": "c0a6ce9ad4d1d063c4c15201ecbb2604809fac691041a018673f5f78ab7bcaee",
+    "mkt_premium.csv.gz": "0dbae1822c7049eba2998504176e772d59b5ed806c9389268148d19d6c5c0616",
+    "mkt_price.csv.gz": "563fcb01d43daf491f1b6047ae0c07a7025534e6b21453220608ff9334e308ea",
+    "mkt_profit_growth.csv.gz": "9f34c12305e853adfbbc3c63b37f07fc03ac2082502143c7172a7345a5c31acf",
+    "mkt_remaining_scale.csv.gz": "693b9d8e00deb8786c3bc1ed969bb12910ddffdaedad91e627b2d0e2af61a8bf",
+    "mkt_revenue_growth.csv.gz": "9c898125d2f2afc2fd54492e0639fa38b230c100d86914a1810a2bd2baa063df",
+    "mkt_roe.csv.gz": "a9fffc6eb1412f2cfe0938022c37cca0dac9ece245277bd93ab91d2ea0ce409b",
+    "mkt_turnover20.csv.gz": "43420a708589321452ee7ec32839b33ff3e2e52fcf010e550e60973e7f4d65e9"
+  }
+}

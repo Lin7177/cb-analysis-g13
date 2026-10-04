@@ -1,0 +1,9 @@
+﻿curve_date,tenor_years,yield_pct,source_url,published_at,retrieved_at_utc
+2026-09-29,0.25,1.1742,https://yield.chinabond.com.cn/cbweb-cbrc-web/cbrc/queryGjqxInfo?workTime=2026-09-29&locale=zh_CN,2026-09-29 17:30+08:00,2026-10-02T09:43:25.851186+00:00
+2026-09-29,0.5,1.1997,https://yield.chinabond.com.cn/cbweb-cbrc-web/cbrc/queryGjqxInfo?workTime=2026-09-29&locale=zh_CN,2026-09-29 17:30+08:00,2026-10-02T09:43:25.851229+00:00
+2026-09-29,1,1.2197,https://yield.chinabond.com.cn/cbweb-cbrc-web/cbrc/queryGjqxInfo?workTime=2026-09-29&locale=zh_CN,2026-09-29 17:30+08:00,2026-10-02T09:43:25.851244+00:00
+2026-09-29,3,1.2826,https://yield.chinabond.com.cn/cbweb-cbrc-web/cbrc/queryGjqxInfo?workTime=2026-09-29&locale=zh_CN,2026-09-29 17:30+08:00,2026-10-02T09:43:25.851254+00:00
+2026-09-29,5,1.3948,https://yield.chinabond.com.cn/cbweb-cbrc-web/cbrc/queryGjqxInfo?workTime=2026-09-29&locale=zh_CN,2026-09-29 17:30+08:00,2026-10-02T09:43:25.851264+00:00
+2026-09-29,7,1.497,https://yield.chinabond.com.cn/cbweb-cbrc-web/cbrc/queryGjqxInfo?workTime=2026-09-29&locale=zh_CN,2026-09-29 17:30+08:00,2026-10-02T09:43:25.851273+00:00
+2026-09-29,10,1.667,https://yield.chinabond.com.cn/cbweb-cbrc-web/cbrc/queryGjqxInfo?workTime=2026-09-29&locale=zh_CN,2026-09-29 17:30+08:00,2026-10-02T09:43:25.851282+00:00
+2026-09-29,30,2.0735,https://yield.chinabond.com.cn/cbweb-cbrc-web/cbrc/queryGjqxInfo?workTime=2026-09-29&locale=zh_CN,2026-09-29 17:30+08:00,2026-10-02T09:43:25.851290+00:00

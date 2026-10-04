@@ -1,0 +1,7 @@
+{
+  "date": "2026-09-29",
+  "source_url": "https://yield.chinabond.com.cn/cbweb-cbrc-web/cbrc/queryGjqxInfo?workTime=2026-09-29&locale=zh_CN",
+  "sha256": "13d1c6127abc657e3903993a1a1c93715e605cf983a02d60cacadf218ef61b6f",
+  "publication_rule": "ChinaBond daily release 17:30 Beijing; T=2026-09-30 15:00 excludes same-day curve",
+  "curve_type": "Treasury yield-to-maturity key tenors; interpolated flat-yield approximation, not bootstrapped zero curve"
+}

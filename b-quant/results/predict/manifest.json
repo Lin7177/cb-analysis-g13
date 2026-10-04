@@ -1,0 +1,67 @@
+{
+  "module": "B4 market-performance prediction",
+  "T": "2026-09-30",
+  "horizon": "2027-03-30",
+  "horizon_sessions": 125,
+  "spreads_bp": [
+    50,
+    200,
+    500
+  ],
+  "base_spread_bp": 200,
+  "stress_spread_bp": 500,
+  "n_paths": 10000,
+  "bootstrap_block_sessions": 21,
+  "grid": {
+    "lo": 0.3,
+    "hi": 3.0,
+    "n": 91
+  },
+  "tree_steps": 401,
+  "call_threshold": 130.0,
+  "exit_bases": {
+    "convergence": "exit = tree model value at horizon",
+    "gap_persist": "exit = model value x T-day market/model ratio (premium gap kept)"
+  },
+  "engines": {
+    "bootstrap": "block bootstrap of real daily qfq returns, blocks internally ordered",
+    "gbm": "zero-drift lognormal; drift declared not estimated"
+  },
+  "walkforward": {
+    "roots": [
+      "2021-09-30",
+      "2022-09-30",
+      "2023-09-29",
+      "2024-09-30",
+      "2025-09-30",
+      "2026-03-31"
+    ],
+    "rule": "only data up to each root"
+  },
+  "special_cases": {
+    "SH:123072": "matures 2026-10-20 before horizon; deterministic redemption exit; last trading 2026-10-15",
+    "SH:113703": "61 quotes only; GBM engine only, no bootstrap"
+  },
+  "limitations": [
+    "Fixed conversion price; no rolling call / discretionary reset / put; inherited from the B1 pricing core",
+    "Credit spreads are analyst scenarios, not rating-calibrated market quotes",
+    "Bootstrap resamples overlapping history; effective sample size is smaller than the path count",
+    "Walk-forward applies T-day terms and the T-day Treasury curve backward; historical conversion prices are unavailable",
+    "Exit values are model references, not executable prices; returns are before tax and fees",
+    "p_exit_gt130 flags the call-price region only; actual redemption depends on issuer decisions"
+  ],
+  "runtime": {
+    "python": "3.13.14",
+    "QuantLib": "1.43",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  },
+  "input_sha256": {
+    "b_daily_group13_20200101_20260930.csv.gz": "ac690006d434f42b644d668066cc8a4328158494213d1b1d24bf280fd181ec7f",
+    "b_daily_group13_20200101_20260930.manifest.json": "4d55d3837d72b9b6b176fa7ac1c55a1e4e5baddca0273ca68b6e7e8712498988",
+    "base.csv": "911ea1da9f08431121d25e4284d4618a00d526d1cd5bfb64c77a34dffd0cc953",
+    "riskfree_curve_20260929.csv": "1587f97c444e067dddde2a4691516a485c7685c5f2184ea98d4672961539db60",
+    "riskfree_curve_manifest.json": "d4a532622d73cfa58c883c84b2b879c294451be7fbbeeb0f4fd99abd9a1f33a8",
+    "terms_verified.csv": "8a1df439885d37be70a461d80dfc2360379fbb6e0c25d681d64acb28d45746a7"
+  }
+}

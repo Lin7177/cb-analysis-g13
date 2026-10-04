@@ -1,0 +1,4 @@
+# Preserve exact bytes of hashed scientific inputs and result manifests.
+*.csv -text
+*.json -text
+*.gz -text

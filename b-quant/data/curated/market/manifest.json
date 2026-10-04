@@ -1,0 +1,128 @@
+{
+  "purpose": "Market-wide CB factor panels for weight estimation (see docs/methods/weight-estimation.md)",
+  "factors": {
+    "amount": {
+      "file": "mkt_amount.csv.gz",
+      "rows": 1108,
+      "bonds": 799,
+      "first": "2022-01-04",
+      "last": "2026-07-31"
+    },
+    "beta": {
+      "file": "mkt_beta.csv.gz",
+      "rows": 1108,
+      "bonds": 798,
+      "first": "2022-01-04",
+      "last": "2026-07-31"
+    },
+    "cb_corr": {
+      "file": "mkt_cb_corr.csv.gz",
+      "rows": 1108,
+      "bonds": 798,
+      "first": "2022-01-04",
+      "last": "2026-07-31"
+    },
+    "current_ratio": {
+      "file": "mkt_current_ratio.csv.gz",
+      "rows": 1108,
+      "bonds": 772,
+      "first": "2022-01-04",
+      "last": "2026-07-31"
+    },
+    "downrev_count": {
+      "file": "mkt_downrev_count.csv.gz",
+      "rows": 1108,
+      "bonds": 783,
+      "first": "2022-01-04",
+      "last": "2026-07-31"
+    },
+    "equity_to_assets": {
+      "file": "mkt_equity_to_assets.csv.gz",
+      "rows": 1108,
+      "bonds": 798,
+      "first": "2022-01-04",
+      "last": "2026-07-31"
+    },
+    "force_redeem_phase": {
+      "file": "mkt_force_redeem_phase.csv.gz",
+      "rows": 1108,
+      "bonds": 783,
+      "first": "2022-01-04",
+      "last": "2026-07-31"
+    },
+    "guaranteed_price": {
+      "file": "mkt_guaranteed_price.csv.gz",
+      "rows": 1108,
+      "bonds": 799,
+      "first": "2022-01-04",
+      "last": "2026-07-31"
+    },
+    "premium": {
+      "file": "mkt_premium.csv.gz",
+      "rows": 1108,
+      "bonds": 799,
+      "first": "2022-01-04",
+      "last": "2026-07-31"
+    },
+    "price": {
+      "file": "mkt_price.csv.gz",
+      "rows": 1108,
+      "bonds": 799,
+      "first": "2022-01-04",
+      "last": "2026-07-31"
+    },
+    "profit_growth": {
+      "file": "mkt_profit_growth.csv.gz",
+      "rows": 1108,
+      "bonds": 798,
+      "first": "2022-01-04",
+      "last": "2026-07-31"
+    },
+    "remaining_scale": {
+      "file": "mkt_remaining_scale.csv.gz",
+      "rows": 1108,
+      "bonds": 783,
+      "first": "2022-01-04",
+      "last": "2026-07-31"
+    },
+    "revenue_growth": {
+      "file": "mkt_revenue_growth.csv.gz",
+      "rows": 1108,
+      "bonds": 798,
+      "first": "2022-01-04",
+      "last": "2026-07-31"
+    },
+    "roe": {
+      "file": "mkt_roe.csv.gz",
+      "rows": 1108,
+      "bonds": 798,
+      "first": "2022-01-04",
+      "last": "2026-07-31"
+    },
+    "turnover20": {
+      "file": "mkt_turnover20.csv.gz",
+      "rows": 1108,
+      "bonds": 799,
+      "first": "2022-01-04",
+      "last": "2026-07-31"
+    }
+  },
+  "sha256": {
+    "mkt_amount.csv.gz": "5fcd3f20eea61d4bb03eabe7b60b2e426ea1f88b09ba3c16d1e8dad30a357e42",
+    "mkt_beta.csv.gz": "36b95000a22bfad8b92ef460b6c4c8b8d116056fc11e4250c8fcfb8892da1397",
+    "mkt_cb_corr.csv.gz": "e075da0673821ea896b777315b6e6b1e3320c9d0e11bed8179070c5de0629ef5",
+    "mkt_current_ratio.csv.gz": "9a0ef905dcca3e5f1b7ba2d17be2b68b859458f0216aea4e61448ac258008dda",
+    "mkt_downrev_count.csv.gz": "97445e50103d9526509d8d14ab28078c80901799b83e01f79da9b08e5e1cca26",
+    "mkt_equity_to_assets.csv.gz": "19ec0fce1a9416246e95aedef56bc4b57c483c47df2cae8192e86051d098bae8",
+    "mkt_force_redeem_phase.csv.gz": "4cddf195296430c144903072b974bdd8520c918f31860482f3b158997ed0654f",
+    "mkt_guaranteed_price.csv.gz": "c0a6ce9ad4d1d063c4c15201ecbb2604809fac691041a018673f5f78ab7bcaee",
+    "mkt_premium.csv.gz": "0dbae1822c7049eba2998504176e772d59b5ed806c9389268148d19d6c5c0616",
+    "mkt_price.csv.gz": "563fcb01d43daf491f1b6047ae0c07a7025534e6b21453220608ff9334e308ea",
+    "mkt_profit_growth.csv.gz": "9f34c12305e853adfbbc3c63b37f07fc03ac2082502143c7172a7345a5c31acf",
+    "mkt_remaining_scale.csv.gz": "693b9d8e00deb8786c3bc1ed969bb12910ddffdaedad91e627b2d0e2af61a8bf",
+    "mkt_revenue_growth.csv.gz": "9c898125d2f2afc2fd54492e0639fa38b230c100d86914a1810a2bd2baa063df",
+    "mkt_roe.csv.gz": "a9fffc6eb1412f2cfe0938022c37cca0dac9ece245277bd93ab91d2ea0ce409b",
+    "mkt_turnover20.csv.gz": "43420a708589321452ee7ec32839b33ff3e2e52fcf010e550e60973e7f4d65e9"
+  },
+  "note": "Panels are daily 14:45 snapshots keyed by CB code (e.g. 113659.SH); Qty_* carry underlying-stock fundamentals mapped to the bond code."
+}
