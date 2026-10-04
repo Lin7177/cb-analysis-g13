@@ -36,7 +36,7 @@ b-quant 管线（799券面板 → pricing 定价核 → B0 权重反推[FM+RankI
 
 ## 已知缺口（诚实声明，下一阶段处理）
 
-1. **compose 重算路径断裂**：`b-quant/src/bquant/weights/compose.py` 期望的外部输入（A线打分 results.csv、B2/B3 results.csv）未随历史入库；现库中 `composite_scores.csv`（2026-10-03 生成）为准，`b4_reconcile_v6.py` 负责权重再生成与矩阵对账
+1. ~~compose 重算路径断裂~~ **已闭合（2026-10-05）**：三份失传评分输入已恢复至 `b-quant/data/inputs/`（恢复脚本 `b1_price_bonds.py`/`b1_build_base.py`/`b2_linkage.py`，来历与验证见 [PROVENANCE.md](../../b-quant/data/inputs/PROVENANCE.md)）；compose 输出与主PPT p32 矩阵 18/18 吻合。注意 p32 综合列与 weights.json 分属综合/展示双口径（V6 已知设计，见 PROVENANCE）
 2. **workbenches 目录编号与主PPT模块编号存在历史错位**（见章程 §五；各脚本已加历史冻结头注）
 3. **公告证据原件不入库**：143MB 的 B1_verified 公告 PDF 留在老仓库 `data/cache/`，如需证据链可由 `b-quant/src/bquant/collect/` 采集脚本重新获取
 4. 旧 G0 流程文档（可执行方案、报告蓝图、A负责人任务说明等）留在老仓库 `project_docs/`，未迁移

@@ -16,8 +16,8 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[3]          # b-quant/
-REPO = ROOT.parent                                   # bond-investment/
-DATA = REPO / 'data' / 'curated'
+DATA = ROOT / 'data' / 'curated'
+INPUTS = ROOT / 'data' / 'inputs'                    # 评分输入（失传后于2026-10-05恢复，见 data/inputs/PROVENANCE.md）
 PRED = ROOT / 'results' / 'predict' / 'predictions.csv'
 WEIGHTS = ROOT / 'results' / 'weights' / 'weights.json'
 
@@ -63,10 +63,10 @@ def distribution_score(p50: float, p05: float, p_loss: float) -> float:
     return round(0.4 * m50 + 0.3 * m05 + 0.3 * mloss, 2)
 
 def load_dimensions() -> pd.DataFrame:
-    base = pd.read_csv(REPO / 'work' / 'B_methods' / 'B1' / 'base.csv')
-    ares = pd.read_csv(REPO / 'work' / 'A' / 'results.csv').set_index('bond_key')
-    b2 = pd.read_csv(REPO / 'work' / 'B_methods' / 'B2' / 'results.csv').set_index('bond_key')
-    b3 = pd.read_csv(REPO / 'work' / 'B_methods' / 'B3' / 'results.csv').set_index('bond_key')
+    base = pd.read_csv(INPUTS / 'b1_base_recovered.csv')
+    ares = pd.read_csv(INPUTS / 'a_results_recovered.csv').set_index('bond_key')
+    b2 = pd.read_csv(INPUTS / 'b2_pricing_recovered.csv').set_index('bond_key')
+    b3 = pd.read_csv(INPUTS / 'b3_linkage_recovered.csv').set_index('bond_key')
     daily = pd.read_csv(DATA / 'b_daily_group13_20200101_20260930.csv.gz')
     daily['date'] = pd.to_datetime(daily.date)
     pred = pd.read_csv(PRED)

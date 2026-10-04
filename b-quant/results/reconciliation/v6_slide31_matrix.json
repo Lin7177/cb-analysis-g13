@@ -1,0 +1,266 @@
+{
+  "meta": {
+    "title": "V6 slide31 合成矩阵真值（18券 × D1–D6），与新仓库主PPT p32 交叉核对",
+    "created": "2026-10-04",
+    "extraction_method": "python-pptx 1.0.2 遍历 shape，读取页内 20x10 表格全部单元格文本；两份 PPT 均逐格比对（cell diffs = 0）",
+    "sources": {
+      "old_v6_pptx": "D:\\git-windows\\Projects\\course-project\\bond-investment\\work\\v6\\可转换债券投资分析——第13组课堂汇报（总分总重构版）.pptx",
+      "old_v6_slide": 31,
+      "old_v6_total_slides": 35,
+      "new_deck_pptx": "D:\\git-windows\\Projects\\course-project\\cb-analysis-g13\\deck\\可转债全量版.pptx",
+      "new_deck_slide": 32,
+      "new_deck_total_slides": 36,
+      "cross_check": "两版该表 20 行 × 10 列逐格文本完全一致（0 处差异）；仅页脚页码/装饰文本不同"
+    },
+    "bond_key_mapping_source": "old repo b-quant/results/weights/composite_scores.csv（= work/v6/code_restore_backup 同名文件，二者一致；新仓库同名文件亦一致）",
+    "dimension_labels": {
+      "D1": "经营与信用",
+      "D2": "估值可兑现",
+      "D3": "债底保护",
+      "D4": "正股走势与联动",
+      "D5": "流动性与路径",
+      "D6": "市场表现预测",
+      "note": "维度名称取自 old repo work/v6/B4赋权讲解方案.md 的『评分维度—历史赋权代理—18券评分输入』对应表；slide31 本页表头只写 D1–D6"
+    },
+    "market_weights_displayed_row": {
+      "D1": "13%",
+      "D2": "2%",
+      "D3": "48%",
+      "D4": "7%",
+      "D5": "23%",
+      "D6": "7%",
+      "note": "页面展示权重行（四舍五入值，对应残差项resid不进回归的『展示口径』精确值 D1 12.5804709% / D2 2.2720227% / D3 47.8588418% / D4 7.3731576% / D5 23.1787551% / D6 6.7367519%）"
+    },
+    "composite_weight_convention": {
+      "description": "本表『综合』列实际可由『综合口径』权重（resid 进入回归）对页面一位小数 D 值加权求和完整复现（18/18 全部命中）：",
+      "weights": {
+        "D1": 0.127340439,
+        "D2": 0.006431931,
+        "D3": 0.490874804,
+        "D4": 0.075377562,
+        "D5": 0.232311561,
+        "D6": 0.067663703
+      },
+      "verification": "18券全部 |round(calc,2)-slide综合| <= 0.011，0 例不符",
+      "dual_convention_note": "展示权重行与综合列分属两套权重口径（resid 出/入回归），为 old repo work/v6/B4赋权讲解方案.md 已记录的 V6 已知内部口径分歧（例：科沃 6.04 综合 vs 5.93 展示口径）；两版 PPT 在此问题上保持一致，非提取差异"
+    },
+    "slide_callouts": [
+      "科沃 综合 6.04 全池最高——R2 一票否决（好公司≠好转债的数字版）",
+      "特纸 5.61 开放第一——权重补位候选",
+      "红线券各有触发列（R1×5 · R2×6 · R3×2，乐歌双踩）"
+    ],
+    "decision_note": "两步规则最终入选：海顺、莱克、特纸（开放池前三：特纸开放1/欧22开放2/莱克开放3 为排序展示；权重补位规则另见讲解方案）"
+  },
+  "market_weights_row_in_table": ["市场权重", "13%", "2%", "48%", "7%", "23%", "7%", "100%", "—", "一票否决，不计权重"],
+  "bonds": [
+    {
+      "bond_key": "SH:113633",
+      "bond_name": "科沃转债",
+      "short_name": "科沃",
+      "D1": 8.7, "D2": 0.5, "D3": 8.0, "D4": 1.3, "D5": 2.5, "D6": 4.8,
+      "composite": 6.04,
+      "open_rank": null,
+      "redline": "R2 溢价>100%",
+      "redline_code": "R2",
+      "direction": "正向、现金转化约束"
+    },
+    {
+      "bond_key": "SZ:127044",
+      "bond_name": "蒙娜转债",
+      "short_name": "蒙娜",
+      "D1": 6.9, "D2": 1.5, "D3": 8.0, "D4": 3.0, "D5": 2.5, "D6": 4.8,
+      "composite": 5.95,
+      "open_rank": null,
+      "redline": "R2",
+      "redline_code": "R2",
+      "direction": "中性偏正、修复有条件"
+    },
+    {
+      "bond_key": "SZ:123072",
+      "bond_name": "乐歌转债",
+      "short_name": "乐歌",
+      "D1": 5.5, "D2": 0.5, "D3": 8.0, "D4": 2.1, "D5": 2.0, "D6": 8.0,
+      "composite": 5.80,
+      "open_rank": null,
+      "redline": "R2+R3",
+      "redline_code": ["R2", "R3"],
+      "direction": "中性偏负、期限约束"
+    },
+    {
+      "bond_key": "SH:111002",
+      "bond_name": "特纸转债",
+      "short_name": "特纸",
+      "D1": 8.7, "D2": 6.8, "D3": 5.0, "D4": 8.0, "D5": 5.0, "D6": 3.5,
+      "composite": 5.61,
+      "open_rank": 1,
+      "redline": null,
+      "redline_code": null,
+      "direction": "正向但杠杆约束"
+    },
+    {
+      "bond_key": "SH:113625",
+      "bond_name": "江山转债",
+      "short_name": "江山",
+      "D1": 1.8, "D2": 3.5, "D3": 8.0, "D4": 2.1, "D5": 2.0, "D6": 8.0,
+      "composite": 5.34,
+      "open_rank": null,
+      "redline": "R1",
+      "redline_code": "R1",
+      "direction": "负向"
+    },
+    {
+      "bond_key": "SH:113655",
+      "bond_name": "欧22转债",
+      "short_name": "欧22",
+      "D1": 6.5, "D2": 3.5, "D3": 6.0, "D4": 5.0, "D5": 3.0, "D6": 3.6,
+      "composite": 5.12,
+      "open_rank": 2,
+      "redline": null,
+      "redline_code": null,
+      "direction": "中性偏负经营、信用有缓冲"
+    },
+    {
+      "bond_key": "SH:113659",
+      "bond_name": "莱克转债",
+      "short_name": "莱克",
+      "D1": 6.5, "D2": 9.1, "D3": 5.0, "D4": 8.0, "D5": 3.0, "D6": 6.3,
+      "composite": 5.07,
+      "open_rank": 3,
+      "redline": null,
+      "redline_code": null,
+      "direction": "中性、汇兑承压且现金资产有缓冲"
+    },
+    {
+      "bond_key": "SZ:127069",
+      "bond_name": "小熊转债",
+      "short_name": "小熊",
+      "D1": 6.9, "D2": 5.3, "D3": 6.0, "D4": 5.0, "D5": 2.0, "D6": 2.9,
+      "composite": 4.90,
+      "open_rank": 4,
+      "redline": null,
+      "redline_code": null,
+      "direction": "中性偏正信用、利润承压"
+    },
+    {
+      "bond_key": "SZ:123183",
+      "bond_name": "海顺转债",
+      "short_name": "海顺",
+      "D1": 6.1, "D2": 9.2, "D3": 5.0, "D4": 6.5, "D5": 2.5, "D6": 6.3,
+      "composite": 4.79,
+      "open_rank": 5,
+      "redline": null,
+      "redline_code": null,
+      "direction": "中性、盈利修复未证实"
+    },
+    {
+      "bond_key": "SZ:123154",
+      "bond_name": "火星转债",
+      "short_name": "火星",
+      "D1": 2.4, "D2": 3.5, "D3": 7.0, "D4": 1.5, "D5": 2.5, "D6": 4.8,
+      "composite": 4.79,
+      "open_rank": null,
+      "redline": "R1",
+      "redline_code": "R1",
+      "direction": "负向"
+    },
+    {
+      "bond_key": "SZ:127047",
+      "bond_name": "帝欧转债",
+      "short_name": "帝欧",
+      "D1": 1.2, "D2": 10.0, "D3": 6.0, "D4": 6.8, "D5": 3.0, "D6": 5.8,
+      "composite": 4.76,
+      "open_rank": null,
+      "redline": "R1",
+      "redline_code": "R1",
+      "direction": "负向信用、经营有反证"
+    },
+    {
+      "bond_key": "SZ:123250",
+      "bond_name": "嘉益转债",
+      "short_name": "嘉益",
+      "D1": 6.3, "D2": 0.5, "D3": 6.0, "D4": 2.1, "D5": 2.0, "D6": 3.5,
+      "composite": 4.61,
+      "open_rank": null,
+      "redline": "R2",
+      "redline_code": "R2",
+      "direction": "中性偏正信用、经营承压"
+    },
+    {
+      "bond_key": "SH:113670",
+      "bond_name": "金23转债",
+      "short_name": "金23",
+      "D1": 4.0, "D2": 0.5, "D3": 6.0, "D4": 3.5, "D5": 2.0, "D6": 3.6,
+      "composite": 4.43,
+      "open_rank": null,
+      "redline": "R2",
+      "redline_code": "R2",
+      "direction": "负向"
+    },
+    {
+      "bond_key": "SZ:123229",
+      "bond_name": "艾录转债",
+      "short_name": "艾录",
+      "D1": 4.3, "D2": 3.5, "D3": 5.0, "D4": 5.0, "D5": 2.0, "D6": 2.9,
+      "composite": 4.07,
+      "open_rank": null,
+      "redline": "R1",
+      "redline_code": "R1",
+      "direction": "中性、修复有证但信用约束"
+    },
+    {
+      "bond_key": "SH:113693",
+      "bond_name": "志邦转债",
+      "short_name": "志邦",
+      "D1": 4.0, "D2": 1.5, "D3": 5.0, "D4": 3.0, "D5": 2.5, "D6": 2.9,
+      "composite": 3.98,
+      "open_rank": null,
+      "redline": "R2",
+      "redline_code": "R2",
+      "direction": "负向"
+    },
+    {
+      "bond_key": "SH:113703",
+      "bond_name": "翔26转债",
+      "short_name": "翔26",
+      "D1": 6.9, "D2": 3.8, "D3": 3.5, "D4": 5.0, "D5": 2.5, "D6": 3.5,
+      "composite": 3.82,
+      "open_rank": null,
+      "redline": "R3",
+      "redline_code": "R3",
+      "direction": "中性偏正经营、现金有约束"
+    },
+    {
+      "bond_key": "SZ:123235",
+      "bond_name": "亿田转债",
+      "short_name": "亿田",
+      "D1": 2.4, "D2": 9.2, "D3": 2.0, "D4": 9.0, "D5": 3.0, "D6": 6.0,
+      "composite": 3.13,
+      "open_rank": null,
+      "redline": "R1",
+      "redline_code": "R1",
+      "direction": "负向、保留亏损改善"
+    },
+    {
+      "bond_key": "SH:113646",
+      "bond_name": "永吉转债",
+      "short_name": "永吉",
+      "D1": 3.6, "D2": 5.3, "D3": 2.0, "D4": 8.0, "D5": 3.0, "D6": 2.1,
+      "composite": 2.92,
+      "open_rank": 6,
+      "redline": null,
+      "redline_code": null,
+      "direction": "负向盈利质量"
+    }
+  ],
+  "redline_legend": {
+    "R1": "评级下调（本表 5 券：江山/火星/帝欧/艾录/亿田）",
+    "R2": "溢价>100%（本表 6 券：科沃/蒙娜/乐歌/嘉益/金23/志邦）",
+    "R3": "期内到期或样本<120条（本表 2 券：乐歌[R3 期内到期]/翔26[R3 样本<120条]）；乐歌 R2+R3 双踩",
+    "source_of_expansion": "old repo b-quant/results/weights/composite_scores.csv redline 列原文（R1 评级下调 / R2 溢价>100% / R3 期内到期 / R3 样本<120条）"
+  },
+  "consistency_statements": {
+    "old_v6_slide31_vs_new_deck_p32": "完全一致（20x10 表格逐格 0 差异）",
+    "table_vs_composite_scores_csv": "同源但不同口径：composite_scores.csv 的 S1–S6/M1/composite 为引擎合成口径（FM 维度权重），本表 D1–D6/composite 为 PPT 展示口径（市场权重、维度定义/数值有重整，如科沃 S=8.8/5.2/8.3/0.5/2.5/4.85,composite 5.922 vs D=8.7/0.5/8.0/1.3/2.5/4.8,composite 6.04）。红线触发券集合在两口径下完全一致（13 券触发，5/6/2 分布一致）。恢复 A/B2/B3 引擎输入时应以 composite_scores.csv 与引擎复算为准，不应以本表 D 值反推引擎输入",
+    "empty_redline_bonds": ["特纸", "欧22", "莱克", "小熊", "海顺", "永吉"]
+  }
+}

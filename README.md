@@ -51,8 +51,8 @@ python -m unittest discover -s tests           # 测试
 
 ## 诚实边界（已知缺口）
 
-- `composite_scores.csv`（2026-10-03 冻结）是主PPT p32 合成矩阵的数字基准；其上游 A线打分文件未随历史迁移，`compose.py` 重算路径暂断（详见 [docs/methodology/README.md](docs/methodology/README.md)）
-- `workbenches/` 各脚本与 `b1_collect_daily.py`、`b4_reconcile_v6.py` 按老仓库布局书写，当前目录下**不可直接运行**（已加头注，待风格重构轮修复）
+- **评分链已闭合（2026-10-05）**：曾失传的三份评分输入已从库内资产复算恢复至 `b-quant/data/inputs/`（来历与验证见 [PROVENANCE.md](b-quant/data/inputs/PROVENANCE.md)）；`compose` 输出与主PPT p32 矩阵 **18/18 逐格吻合**（D1–D6/综合/红线/开放排名），两步决策复现海顺/莱克/特纸。注意 p32 综合列使用综合口径权重（resid 入回归），`weights.json` 为 p33 展示口径——V6 双口径为已知设计
+- `workbenches/` 各脚本与 `b1_collect_daily.py` 按老仓库布局书写，部分路径**不可直接运行**（已加头注，待风格重构轮修复）
 - 本仓库自老仓库 bond-investment 迁移而来，完全独立、不含指向外部的路径引用；公告证据原件（143MB）不入库，可由 `src/bquant/collect/` 采集脚本重新获取
 
 ## 许可
