@@ -1,7 +1,12 @@
 """Recompute V6 D1-D6 weights, scores, decisions, and reconciliation evidence.
 
+B4 模块入口：与主PPT p32 合成矩阵对账（权重再生成部分实为 B0 引擎的复用）。
 Does not edit presentations. Original V6 matrix values remain in the reconciliation
 so corrections can be reviewed before a later presentation edit.
+
+Historical freeze (2026-10-04): paths referencing work/ below follow the legacy
+repo layout and will be repaired in the style-refactor round; the B0 entry is
+scripts/b0_run_weight_estimation.py.
 """
 import contextlib
 import hashlib
@@ -17,7 +22,7 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / 'b-quant/src'))
+sys.path.insert(0, str(ROOT / 'src'))
 from bquant.weights.compose import DIMS, compose, two_step_decision
 
 

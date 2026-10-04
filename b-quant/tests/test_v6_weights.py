@@ -5,18 +5,18 @@ import unittest
 from pathlib import Path
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / 'b-quant/src'))
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'src'))
 sys.path.insert(0, str(ROOT / 'scripts'))
 from bquant.weights.compose import DIMS, compose, two_step_decision
 from bquant.weights.estimate import dimension_weights
-from run_v6_scoring import original_v6_matrix
+from b4_reconcile_v6 import original_v6_matrix
 
 
 class V6WeightsTests(unittest.TestCase):
     def test_weights_reproduce_frozen_pre_restore_reference(self):
         reference = json.loads((ROOT / 'work/presentation-v4/presentation_content_v4.json').read_text(encoding='utf-8'))['meta']['weights']
-        out = ROOT / 'b-quant/results/weights'
+        out = ROOT / 'results/weights'
         fm = pd.read_csv(out / 'fm_slopes.csv', index_col=0)
         ic = pd.read_csv(out / 'rank_ic.csv', index_col=0)
         weights = dimension_weights(fm, ic)['dimension']

@@ -1,18 +1,19 @@
 # bquant — 第13组可转债量化研究（B线）
 
-18只可转债 + 18只正股的量化研究仓库：已核验的数据底座（B0）、现金流债底与CRR树定价（B1）、
-股债联动计量（B2）、持有路径风险（B4）与六个月市场表现预测（新B4，历史block bootstrap +
-GBM副案 + walk-forward校准）。观察日 **2026-09-30**，公开信息截止当日15:00。
+18只可转债 + 18只正股的量化研究仓库：权重量化（B0）、数据底座与定价（B1）、股债联动（B2）、
+持有路径（B3）、六个月市场表现预测与合成决策（B4，历史block bootstrap + GBM副案 +
+walk-forward校准）。观察日 **2026-09-30**，公开信息截止当日15:00。模块编号与主PPT讲述分工
+一致（B0 权重量化 ｜ B1 数据底座+定价 ｜ B2 联动 ｜ B3 路径 ｜ B4 预测+合成），导航见根README。
 
 ## 模块结构
 
 | 模块 | 内容 | 入口 | 结果 |
 | --- | --- | --- | --- |
-| B0 数据底座 | 44,077条真实日线（2020-01-01→2026-09-30）、18券核验条款、国债曲线；来源与SHA-256清单 | `data/curated/` + `src/bquant/terms/` | `DATASETS.md` |
-| B1 定价 | 真实现金流债底 + QuantLib TF/CRR美式转股树（401步收敛<0.17%） | `src/bquant/pricing/model.py` | 迁移中见 `work/B_methods/B2`（原路径） |
-| B2 联动 | OLS+HC3稳健标准误、120训练/60留出、双收益口径 | 迁移中见 `work/B_methods/B3` | 同左 |
-| B3 路径 | 期末收益vs路径回撤、16组窗口对照、58次除息事件核对 | 迁移中见 `work/B_methods/B4` | 同左 |
-| B4 预测 | 退出价值曲面×block bootstrap（主）/零漂移GBM（副），双退出口径，walk-forward校准 | `src/bquant/predict/run.py` | `results/predict/predictions.csv` |
+| B0 权重量化 | FM+RankIC 两分支各50%反推六维权重（Newey-West t 诊断，−15%止损标签） | `scripts/b0_run_weight_estimation.py` | `results/weights/`（weights.json、fm_slopes.csv、rank_ic.csv） |
+| B1 数据底座+定价 | 44,077条真实日线（2020-01-01→2026-09-30）、18券核验条款、国债曲线（SHA-256清单）；真实现金流债底 + QuantLib TF/CRR美式转股树（401步收敛<0.17%） | `scripts/b1_collect_daily.py` 等采集三件；`src/bquant/pricing/model.py` | `data/curated/`；树差/债底数值 |
+| B2 联动 | OLS+HC3稳健标准误、120训练/60留出、双收益口径 | 计算见 `workbenches/B2`（历史工作台） | 同左 |
+| B3 路径 | 期末收益vs路径回撤、16组窗口对照、58次除息事件核对 | 计算见 `workbenches/B3` | 同左 |
+| B4 预测+合成 | 退出价值曲面×block bootstrap（主）/零漂移GBM（副），双退出口径，walk-forward校准；18券×六维合成与两步决策 | `src/bquant/predict/run.py`；`scripts/b4_reconcile_v6.py`（对账） | `results/predict/predictions.csv`、`results/weights/composite_scores.csv` |
 
 ## 快速开始
 
@@ -43,7 +44,7 @@ python -m venv .venv
 ## 数据来源与许可
 
 - 行情：腾讯公开K线接口（债/股日线，前复权）；条款与公告：巨潮资讯网；无风险曲线：中国债券信息网（T-1日17:30发布规则已核验）。
-- 数据仅用于课程研究；代码以MIT许可发布（见LICENSE）。
+- 数据仅用于课程研究；代码以MIT许可发布（见仓库根目录 [LICENSE](../LICENSE)）。
 
 ## 已知边界（诚实清单）
 

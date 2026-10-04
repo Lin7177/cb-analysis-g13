@@ -1,7 +1,10 @@
-"""Collect and validate Group 13 public daily market bars.
+"""Collect and validate Group 13 public daily market bars. (B1 数据底座采集入口)
 
-Run: python scripts/collect_b_daily.py
-Check saved output: python scripts/collect_b_daily.py --validate-only
+Run: python scripts/b1_collect_daily.py
+Check saved output: python scripts/b1_collect_daily.py --validate-only
+
+Historical freeze (2026-10-04): the universe path inside still points to the
+legacy work/ layout and will be repaired in the style-refactor round.
 
 The endpoint is Tencent Finance's publicly reachable K-line service. The
 unadjusted daily bar is retained for both asset types; stocks also receive a

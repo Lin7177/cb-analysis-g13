@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# 运行时缓存（行情抓取等）
+data/cache/
+b-quant/data/cache/
+
+# Office 临时锁文件
+~$*
+
+# OS
+.DS_Store
+Thumbs.db

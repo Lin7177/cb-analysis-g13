@@ -49,13 +49,13 @@
 - FM斜率是"因子溢价"语义而非预测力语义（Barra传统），Shanken(1992)类修正式下显著性应打折
 - 评级/偿债特征为当前快照，含少量前视；估计面板截至2026-07-31，应用端18券数据截至2026-09-30，存在两个月口径差（已声明）
 - 分解残差特征逐年不稳（2024翻正），已从权重中剔除、保留于诊断
-- 采集：评级快照来自东方财富公开接口（`bquant/collect/eastmoney.py`，可一键重跑）；行情面板由团队离线行情库导出（`bquant/market/catalog.py`适配器 + `scripts/export_market_panel.py`，SHA-256清单随附）
+- 采集：评级快照来自东方财富公开接口（`bquant/collect/eastmoney.py`，可一键重跑）；行情面板由团队离线行情库导出（`bquant/market/catalog.py`适配器 + `scripts/b1_export_market_panel.py`，SHA-256清单随附）
 
 ## 6. 复现
 
 ```bash
-python scripts/collect_cb_ratings.py            # 评级快照（在线，公开接口）
-MARKET_CATALOG_DIR=<path> python scripts/export_market_panel.py   # 行情面板导出
-python scripts/run_weight_estimation.py         # 权重估计 + 诊断
+python scripts/b1_collect_cb_ratings.py            # 评级快照（在线，公开接口）
+MARKET_CATALOG_DIR=<path> python scripts/b1_export_market_panel.py   # 行情面板导出
+python scripts/b0_run_weight_estimation.py         # 权重估计 + 诊断（B0 权重量化）
 python -c "from bquant.weights.compose import compose, two_step_decision"  # 合成+两步决策
 ```
