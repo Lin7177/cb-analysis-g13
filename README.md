@@ -25,8 +25,23 @@
 | **B0 权重量化** | 六维权重由历史数据反推（Fama–MacBeth 回归 + RankIC/ICIR 两法各50%） | p04–p05 | `b0_run_weight_estimation.py` | `src/bquant/weights/`（estimate/features） | `results/weights/weights.json`、fm_slopes、rank_ic |
 | **B1 数据底座+定价** | 日线/评级/面板采集；债底折现、树定价 | p25–p27 | `b1_collect_daily.py`、`b1_collect_cb_ratings.py`、`b1_export_market_panel.py` | `src/bquant/{collect,terms,market,pricing}/` + `data/` | `data/curated/`（SHA-256 manifest）、树差（模型参考价−市价）/债底数值 |
 | **B2 联动** | 正股→债价传导（β×R²，D4 测算） | p28 | `b2_linkage.py`（恢复脚本） | `workbenches/B2/`（历史工作台） | `data/inputs/b3_linkage_recovered.csv` |
-| **B3 路径** | 持有路径统计（回撤/窗口口径，D5 测算） | p29 | —（工作台计算） | `workbenches/B3/` | 路径口径 |
+| **B3 路径** | 持有路径统计（回撤/窗口口径，D5 测算） | p29 | `b3_ex_dividend.py`、`b3_window_stats.py`、`b3_path_replay.py` | `workbenches/B3/`（历史工作台） | `results/path/`（除息 58/45/18、窗口表、单券路径复盘） |
 | **B4 预测+合成** | 六只重点券分布预测；18券×六维合成与两步决策 | p30–p33 | `b4_reconcile_v6.py`（脚本冻结：对账复现见 [PROVENANCE](b-quant/data/inputs/PROVENANCE.md)） | `src/bquant/predict/` + `weights/compose` | `results/predict/`、`results/weights/composite_scores.csv` |
+
+### B 线复现指引（B 组成员逐模块自检；均在 `b-quant/` 目录下执行）
+
+| 模块 | 命令 | 输入 | 输出与预期校验 |
+| --- | --- | --- | --- |
+| B0 权重量化 | `python scripts/b0_run_weight_estimation.py` | `data/curated/market/` 面板 | `results/weights/` 与已提交版本**逐字节一致**（种子固定） |
+| B1 底座 | `python scripts/b1_collect_daily.py --validate-only` | `data/universe_v1.csv` + curated | 44,077 行 / 36 标的 / 校验和 PASS（重采需联网，去掉开关） |
+| B1 定价 | `python scripts/b1_price_bonds.py` | `data/curated/` 条款+曲线+日线 | `data/inputs/b2_pricing_recovered.csv`（18 券树差/债底，重写应逐字节一致） |
+| B1 树收敛 | `python scripts/b1_tree_convergence.py` | 同上 | `results/pricing/tree_convergence.csv`（最大差 0.163%） |
+| B2 联动 | `python scripts/b2_linkage.py` → `python scripts/b2_holdout_windows.py` | `data/curated/b_daily` | `data/inputs/b3_linkage_recovered.csv` + `results/linkage/`（β 对 link_note 17/17） |
+| B3 路径 | `python scripts/b3_ex_dividend.py` / `b3_window_stats.py` / `b3_path_replay.py` | `data/curated` + terms_verified | `results/path/`：除息 58/45/18；窗口 1055/9/133/2；帝欧复盘三值命中 |
+| B4 预测+合成 | `python src/bquant/predict/run.py` → `python -m unittest discover -s tests` | `data/curated/` | `results/predict/`（72% 覆盖）；测试预期 9 passed / 2 errors（见诚实边界） |
+| 合成对账 | 方法见 [PROVENANCE](b-quant/data/inputs/PROVENANCE.md)（综合口径权重 + p32 真值逐格对账） | `data/inputs/` | 主PPT p32 18/18 吻合、两步决策海顺/莱克/特纸 |
+
+冻结件：`b4_reconcile_v6.py` 与 `workbenches/` 的 run.py（老布局路径，勿直接运行）；两件证据采集器 `b1_collect_terms.py`、`a_collect_research.py` 需路径适配后联网使用（头注在案）。
 
 ## 数字谱系（每个数字怎么来的）
 
