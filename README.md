@@ -54,8 +54,11 @@ python -m unittest discover -s tests           # 测试（预期 9 passed, 2 err
 ## 诚实边界（已知缺口）
 
 - **评分链已闭合（2026-10-05）**：曾失传的三份评分输入已从库内资产复算恢复至 `b-quant/data/inputs/`（来历与验证见 [PROVENANCE.md](b-quant/data/inputs/PROVENANCE.md)）；`compose` 输出与主PPT p32 矩阵 **18/18 逐格吻合**（D1–D6/综合/红线/开放排名），两步决策复现海顺/莱克/特纸。注意 p32 综合列使用综合口径权重（resid 入回归），`weights.json` 为 p33 展示口径——V6 双口径为已知设计
-- `workbenches/` 全部 run.py 与 `b1_collect_daily.py`、`b4_reconcile_v6.py` 按老仓库布局书写，当前**不可直接运行**（冻结说明见 workbenches/README 头注与各脚本 docstring，待风格重构轮修复）；单测因此预期 **9 passed, 2 errors**
-- 本仓库自老仓库 bond-investment 迁移而来，完全独立、不含指向外部的路径引用；公告证据原件（143MB）不入库，可由 `src/bquant/collect/` 采集脚本重新获取
+- **A线"为什么"证据层已找回（2026-10-05）**：57 列完整打分依据表 `a_results_original.csv` 自老仓库 git 历史恢复，与重建版 18/18×3 交叉一致；同期恢复 A线解释层与两件证据采集器（`b1_collect_terms.py`、`a_collect_research.py`，内部为老布局路径，运行前需适配）
+- **课程第二交付物**：课件要求课后提交**完整分析报告**（邮件）；成文底稿见 `docs/report/分析报告_评分版-v4.md`（中间历史口径，头注有说明），正式成文尚未交付
+- `workbenches/` 全部 run.py 与 `b4_reconcile_v6.py` 按老仓库布局书写，当前**不可直接运行**（冻结说明见 workbenches/README 头注，待风格重构轮修复）；单测因此预期 **9 passed, 2 errors**。`b1_collect_daily.py` 路径已修复，离线自检可用（`--validate-only`），实际采集需联网
+- 主PPT数字 ↔ 仓库证据的对账与勘误处置：[docs/methodology/数字勘误与依据边界.md](docs/methodology/数字勘误与依据边界.md)
+- 本仓库自老仓库 bond-investment 迁移而来，完全独立、不含指向外部的路径引用；公告证据原件（143MB）不入库，可由 `src/bquant/collect/` 与 `b1_collect_terms.py` 采集脚本重新获取
 
 ## 许可
 

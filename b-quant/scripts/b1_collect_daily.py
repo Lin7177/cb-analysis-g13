@@ -3,8 +3,9 @@
 Run: python scripts/b1_collect_daily.py
 Check saved output: python scripts/b1_collect_daily.py --validate-only
 
-Historical freeze (2026-10-04): the universe path inside still points to the
-legacy work/ layout and will be repaired in the style-refactor round.
+Historical note (2026-10-05): the universe path was repaired to the current
+layout (data/universe_v1.csv). Actual (re)collection still requires network
+access to the public Tencent endpoint; `--validate-only` works offline.
 
 The endpoint is Tencent Finance's publicly reachable K-line service. The
 unadjusted daily bar is retained for both asset types; stocks also receive a
@@ -31,7 +32,7 @@ import requests
 
 
 ROOT = Path(__file__).resolve().parents[1]
-UNIVERSE = ROOT / "work" / "universe_v1.csv"
+UNIVERSE = ROOT / "data" / "universe_v1.csv"
 OUT_DIR = ROOT / "data" / "curated"
 CACHE_DIR = ROOT / "data" / "cache" / "b_daily"
 API = "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get"

@@ -1,0 +1,3286 @@
+{
+  "schema_version": 1,
+  "meta": {
+    "observation_date": "2026-09-30",
+    "price_cutoff": "close",
+    "information_cutoff": "2026-09-30 15:00 Asia/Shanghai",
+    "financial_period": "2026-06-30",
+    "purpose": "双版A课堂内容；经营信用判断，不替代B定价和最终3+3",
+    "members_are_research_units": true,
+    "ownership_note": "三券归属可由负责人调整；讲解归属不等于已经发生的学生独立贡献"
+  },
+  "research_protocol": {
+    "common_question": "未来六个月不加杠杆、重视下行，经营预期是否有盈利现金信用支持，条款怎样约束持有，现价补偿交给B检验？",
+    "dimensions": [
+      "行业",
+      "公司经营财务",
+      "偿债信用",
+      "经营条件展望",
+      "条款发行人行为"
+    ],
+    "chain": [
+      "业务问题",
+      "分析方法",
+      "正反证核验",
+      "A判断",
+      "改判条件"
+    ],
+    "scope": "18券逐券均完整；主版三券概览+关键判断，备用汇总18券，不重做研究"
+  },
+  "member_units": [
+    {
+      "owner": "A1",
+      "bond_keys": [
+        "SH:111002",
+        "SH:113646",
+        "SZ:123229"
+      ],
+      "title": "A1 三券独立经营与信用诊断",
+      "overview_seconds": 25,
+      "overview_spoken": "这三券分别做同一规范的独立诊断。特纸增长已兑现，但扩张依赖融资；永吉归母盈利与扣非亏损背离，同时保留海外业务增长；艾录已有盈利修复，但评级降A。这里先判断经营和信用，并不按三券收入或利润规模排名。",
+      "overview": [
+        {
+          "bond_key": "SH:111002",
+          "bond_name": "特纸转债",
+          "diagnosis": "经营增长，融资约束仍强",
+          "evidence": "扣非2.26亿；经营现金由负转正",
+          "counter": "73.33%杠杆，大额投资依赖融资",
+          "sources": [
+            {
+              "bond_key": "SH:111002",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-08/1225463398.PDF",
+              "pages": "半年报6、10—14、45—47、93"
+            },
+            {
+              "bond_key": "SH:111002",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-01/1225399328.PDF",
+              "pages": "评级PDF3"
+            }
+          ]
+        },
+        {
+          "bond_key": "SH:113646",
+          "bond_name": "永吉转债",
+          "diagnosis": "归母盈利，扣非仍亏损",
+          "evidence": "归母0.82亿，扣非−0.25亿",
+          "counter": "境外业务增长、正现金流仍是反证",
+          "sources": [
+            {
+              "bond_key": "SH:113646",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-01/1225451568.PDF",
+              "pages": "半年报6、9、13、19—20、45、47—49"
+            },
+            {
+              "bond_key": "SH:113646",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225380842.PDF",
+              "pages": "半年报45（评级PDF为扫描件）"
+            }
+          ]
+        },
+        {
+          "bond_key": "SZ:123229",
+          "bond_name": "艾录转债",
+          "diagnosis": "盈利修复，信用仍受约束",
+          "evidence": "扣非0.14亿、经营现金0.38亿",
+          "counter": "评级A；新业务亏损与产能消化压力",
+          "sources": [
+            {
+              "bond_key": "SZ:123229",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-18/1225476325.PDF",
+              "pages": "半年报9、12、23—25、58—61"
+            },
+            {
+              "bond_key": "SZ:123229",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-29/1225394145.PDF",
+              "pages": "评级PDF4；半年报58"
+            }
+          ]
+        }
+      ],
+      "deep_dive": {
+        "title": "特纸：增长兑现后仍受融资约束",
+        "bond_key": "SH:111002",
+        "question": "产能增长已经兑现，为什么还不能放松信用约束？",
+        "method": "检验产销量、收入与扣非是否同步，再对照经营现金、投资支出和杠杆。",
+        "test": "收入与扣非同步增长，经营现金转正；但现金1.06亿不足覆盖投资净流出13.59亿。",
+        "counter": "AA维持和新增产能销售兑现支持增长；73.33%杠杆限制安全边际。",
+        "conclusion": "经营逻辑有支持，增长仍依赖融资；交给B检验买价补偿。",
+        "change_condition": "扣非和经营现金持续为正，产能消化且杠杆不再上升。",
+        "spoken": "特纸的问题是，增长兑现以后能否放松信用约束。我先检查产能释放是否变成收入和经常性利润，再看现金能否承担扩张。收入与扣非同步增长，经营现金由负转正，支持经营逻辑。但经营现金流仅1.06亿元，投资净流出13.59亿元，杠杆73.33%。所以增长是真的，融资约束也是真的，买价能否补偿这项风险还要交给B。",
+        "chart": {
+          "type": "bar",
+          "title": "增长与投资资金约束",
+          "unit": "亿元",
+          "categories": [
+            "经营现金",
+            "投资现金净额"
+          ],
+          "series": [
+            {
+              "name": "金额",
+              "values": [
+                1.05934,
+                -13.587051
+              ],
+              "fill": "#296D8C"
+            }
+          ],
+          "source_fields": [
+            [
+              {
+                "bond_key": "SH:111002",
+                "field": "operating_cashflow_yuan",
+                "scale": 100000000.0
+              },
+              {
+                "bond_key": "SH:111002",
+                "supplemental_fact": "te_zhi_investing_cashflow_100m",
+                "scale": 1
+              }
+            ]
+          ],
+          "footnote": "投资现金净额−13.59亿元来自半年报；不是只计资本开支的自由现金流指标。"
+        },
+        "sources": [
+          {
+            "bond_key": "SH:111002",
+            "kind": "h1",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-08-08/1225463398.PDF",
+            "pages": "半年报6、10—14、45—47、93"
+          },
+          {
+            "bond_key": "SH:111002",
+            "kind": "rating",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-07-01/1225399328.PDF",
+            "pages": "评级PDF3"
+          }
+        ],
+        "seconds": 40,
+        "slide_method": "核验销量与扣非，再对照现金、投资和杠杆。",
+        "slide_test": "经营现金1.06亿，投资净流出13.59亿；AA和销售兑现支持反方。",
+        "slide_conclusion": "增长有兑现，融资约束仍强；仍需独立价格补偿证据。"
+      }
+    },
+    {
+      "owner": "A2",
+      "bond_keys": [
+        "SH:113625",
+        "SH:113655",
+        "SH:113693"
+      ],
+      "title": "A2 三券独立经营与信用诊断",
+      "overview_seconds": 25,
+      "overview_spoken": "江山收入骤降既有需求影响，也有主动收缩赊销，低短借不能消除集中兑付压力；欧22仍盈利，但现金转化弱化；志邦亏损并经营流出，同时保留海外整装增长。三券分别诊断后，不能用公司规模或单一短借指标作结论。",
+      "overview": [
+        {
+          "bond_key": "SH:113625",
+          "bond_name": "江山转债",
+          "diagnosis": "经营现金双负，集中兑付承压",
+          "evidence": "收入收缩，扣非−1.10亿，评级A",
+          "counter": "主动收缩赊销、低短借不能忽视",
+          "sources": [
+            {
+              "bond_key": "SH:113625",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-17/1225476065.PDF",
+              "pages": "半年报6、19、24、50—52"
+            },
+            {
+              "bond_key": "SH:113625",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385362.PDF",
+              "pages": "评级PDF3"
+            }
+          ]
+        },
+        {
+          "bond_key": "SH:113655",
+          "bond_name": "欧22转债",
+          "diagnosis": "仍盈利，现金转化明显弱化",
+          "evidence": "经营现金16.67亿降至0.92亿",
+          "counter": "AA与资金规模提供缓冲，仍须看债务",
+          "sources": [
+            {
+              "bond_key": "SH:113655",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525504.PDF",
+              "pages": "半年报6、14—19、56—58"
+            },
+            {
+              "bond_key": "SH:113655",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390002.PDF",
+              "pages": "评级PDF3"
+            }
+          ]
+        },
+        {
+          "bond_key": "SH:113693",
+          "bond_name": "志邦转债",
+          "diagnosis": "亏损与流出，经营修复未成",
+          "evidence": "扣非−1.71亿、经营现金−1.95亿",
+          "counter": "海外整装增长、AA维持是反证",
+          "sources": [
+            {
+              "bond_key": "SH:113693",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225520523.PDF",
+              "pages": "半年报6、25、45、74—76"
+            },
+            {
+              "bond_key": "SH:113693",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225387114.PDF",
+              "pages": "评级结果公告PDF1"
+            }
+          ]
+        }
+      ],
+      "deep_dive": {
+        "title": "欧22：仍盈利不等于经营已修复",
+        "bond_key": "SH:113655",
+        "question": "龙头仍盈利，是否足以证明需求和现金已修复？",
+        "method": "把盈利状态与变化趋势分开，用同为半年的利润、现金和债务缓冲检验改革叙事。",
+        "test": "归母仍盈利4.42亿，但经营现金从16.67亿降到0.92亿；改革尚未形成现金修复。",
+        "counter": "AA维持、品牌渠道与资金规模是缓冲；收入与利润下滑仍是经营负证。",
+        "conclusion": "经营偏弱、信用有缓冲；既不能按规模推荐，也不能把需求下行直接当成违约。",
+        "change_condition": "利润和回款同步修复，工程客户回款与产能消化不恶化。",
+        "spoken": "欧22仍然盈利，为什么还不能说经营已经修复？我把是否盈利和是否改善分开，检查渠道改革有没有变成利润与回款。公司仍有4.42亿元归母利润，但经营现金从上年同期16.67亿元降到0.92亿元，收入和利润也下降。AA评级、品牌和资金规模提供缓冲，所以结论是经营偏弱但信用有缓冲；改革口号不能替代现金兑现，需求下行也不能直接等同违约。",
+        "chart": {
+          "type": "bar",
+          "title": "同口径利润与经营现金",
+          "unit": "亿元",
+          "categories": [
+            "2025H1",
+            "2026H1"
+          ],
+          "series": [
+            {
+              "name": "归母净利",
+              "values": [
+                10.182066,
+                4.417134
+              ],
+              "fill": "#296D8C"
+            },
+            {
+              "name": "经营现金流",
+              "values": [
+                16.667771,
+                0.924974
+              ],
+              "fill": "#C26A48"
+            }
+          ],
+          "source_fields": [
+            [
+              {
+                "bond_key": "SH:113655",
+                "field": "prior_h1_net_profit_yuan",
+                "scale": 100000000.0
+              },
+              {
+                "bond_key": "SH:113655",
+                "field": "net_profit_yuan",
+                "scale": 100000000.0
+              }
+            ],
+            [
+              {
+                "bond_key": "SH:113655",
+                "field": "prior_h1_operating_cashflow_yuan",
+                "scale": 100000000.0
+              },
+              {
+                "bond_key": "SH:113655",
+                "field": "operating_cashflow_yuan",
+                "scale": 100000000.0
+              }
+            ]
+          ],
+          "footnote": "同为半年度口径；改善不等于扭亏，现金变化须解释来源。"
+        },
+        "sources": [
+          {
+            "bond_key": "SH:113655",
+            "kind": "h1",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525504.PDF",
+            "pages": "半年报6、14—19、56—58"
+          },
+          {
+            "bond_key": "SH:113655",
+            "kind": "rating",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390002.PDF",
+            "pages": "评级PDF3"
+          }
+        ],
+        "seconds": 40,
+        "slide_method": "区分仍盈利与已改善，检验改革是否变成回款。",
+        "slide_test": "经营现金流16.67亿降至0.92亿；归母4.42亿和AA支持反方。",
+        "slide_conclusion": "经营偏弱、信用有缓冲；规模不能代替修复证据。"
+      }
+    },
+    {
+      "owner": "A3",
+      "bond_keys": [
+        "SH:113670",
+        "SZ:127044",
+        "SZ:127047"
+      ],
+      "title": "A3 三券独立经营与信用诊断",
+      "overview_seconds": 25,
+      "overview_spoken": "金23亏损并现金流出，AI平台尚处探索；蒙娜利润和现金改善，但订货保证金使现金持续性仍需核验；帝欧现金也改善，却仍有BBB+信用约束。三券都保留正反证，不能把现金为正统一解释成经营反转。",
+      "overview": [
+        {
+          "bond_key": "SH:113670",
+          "bond_name": "金23转债",
+          "diagnosis": "主业承压，转型尚未兑现",
+          "evidence": "扣非−1.43亿、经营现金−2.38亿",
+          "counter": "AA与品牌仍在，AI平台仍属探索",
+          "sources": [
+            {
+              "bond_key": "SH:113670",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225507089.PDF",
+              "pages": "半年报5、10—14、16、39—41"
+            },
+            {
+              "bond_key": "SH:113670",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225394755.PDF",
+              "pages": "评级PDF3"
+            }
+          ]
+        },
+        {
+          "bond_key": "SZ:127044",
+          "bond_name": "蒙娜转债",
+          "diagnosis": "盈利现金改善，修复有条件",
+          "evidence": "扣非0.50亿、经营现金1.82亿",
+          "counter": "现金改善含订货保证金，收入仍下降",
+          "sources": [
+            {
+              "bond_key": "SZ:127044",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225503489.PDF",
+              "pages": "半年报7、12—14、39—41"
+            },
+            {
+              "bond_key": "SZ:127044",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385901.PDF",
+              "pages": "评级PDF3"
+            }
+          ]
+        },
+        {
+          "bond_key": "SZ:127047",
+          "bond_name": "帝欧转债",
+          "diagnosis": "现金改善，信用风险仍独立",
+          "evidence": "经营现金1.37亿，但评级BBB+",
+          "counter": "亏损收窄、转股减债支持反方",
+          "sources": [
+            {
+              "bond_key": "SZ:127047",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225499873.PDF",
+              "pages": "半年报8、15—17、42—44；评级公告1"
+            },
+            {
+              "bond_key": "SZ:127047",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390443.PDF",
+              "pages": "评级结果公告PDF1"
+            }
+          ]
+        }
+      ],
+      "deep_dive": {
+        "title": "帝欧：现金改善为什么未消除信用风险",
+        "bond_key": "SZ:127047",
+        "question": "经营现金转好，信用判断为什么仍偏负？",
+        "method": "追查现金来源，再与扣非盈利、债务期限和正式评级交叉判断。",
+        "test": "经营现金1.37亿含应付款增加贡献；扣非仍亏损0.77亿，评级降BBB+。",
+        "counter": "亏损收窄、正现金和转股降低债务都是真实改善。",
+        "conclusion": "承认经营改善，但回款与持续盈利未充分证明，信用风险仍需单独约束。",
+        "change_condition": "持续扣非修复、真实回款改善且融资和到期压力可核验缓解。",
+        "spoken": "帝欧现金改善，为什么信用判断仍偏负？我的方法是先追查现金来源，再对照持续盈利和到期压力。经营现金1.37亿元是正证，但部分来自应付款增加，扣非仍亏损，正式评级降到BBB+。我也保留亏损收窄和转股降低债务的反证。因此这里不是否认改善，而是改善还不足以证明持续偿债能力；B即使算出较高参考价，也必须继续面对信用约束。",
+        "chart": {
+          "type": "bar",
+          "title": "正现金与持续盈利的差别",
+          "unit": "亿元",
+          "categories": [
+            "扣非利润",
+            "经营现金"
+          ],
+          "series": [
+            {
+              "name": "金额",
+              "values": [
+                -0.772257,
+                1.369035
+              ],
+              "fill": "#296D8C"
+            }
+          ],
+          "source_fields": [
+            [
+              {
+                "bond_key": "SZ:127047",
+                "field": "deducted_profit_yuan",
+                "scale": 100000000.0
+              },
+              {
+                "bond_key": "SZ:127047",
+                "field": "operating_cashflow_yuan",
+                "scale": 100000000.0
+              }
+            ]
+          ],
+          "footnote": "2026H1合并口径；不同报表项目不能直接当作可支配现金。"
+        },
+        "sources": [
+          {
+            "bond_key": "SZ:127047",
+            "kind": "h1",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225499873.PDF",
+            "pages": "半年报8、15—17、42—44；评级公告1"
+          },
+          {
+            "bond_key": "SZ:127047",
+            "kind": "rating",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390443.PDF",
+            "pages": "评级结果公告PDF1"
+          }
+        ],
+        "seconds": 40,
+        "slide_method": "追查现金来源，结合扣非、债务期限和正式评级。",
+        "slide_test": "现金改善含应付款；扣非仍负，评级BBB+。\n转股减债支持反方。",
+        "slide_conclusion": "承认改善，持续盈利和回款仍待证实；信用约束保留。"
+      }
+    },
+    {
+      "owner": "A4",
+      "bond_keys": [
+        "SZ:123072",
+        "SZ:123183",
+        "SZ:123250"
+      ],
+      "title": "A4 三券独立经营与信用诊断",
+      "overview_seconds": 25,
+      "overview_spoken": "乐歌经营现金为正，但临近到期使六个月展望不能直接转成六个月持有；海顺增长含并表，盈利修复未证实；嘉益订单下降，却仍有盈利和现金缓冲。期限、收入来源和订单压力分别解释，不能按增长率直接挑选。",
+      "overview": [
+        {
+          "bond_key": "SZ:123072",
+          "bond_name": "乐歌转债",
+          "diagnosis": "薄利现金正，持有期限受限",
+          "evidence": "扣非0.03亿、经营现金2.47亿",
+          "counter": "到期截断；正现金不等于汇率风险消失",
+          "sources": [
+            {
+              "bond_key": "SZ:123072",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225530258.PDF",
+              "pages": "半年报7、9—18、19、50—52"
+            },
+            {
+              "bond_key": "SZ:123072",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-24/1225385208.PDF",
+              "pages": "评级PDF4"
+            }
+          ]
+        },
+        {
+          "bond_key": "SZ:123183",
+          "bond_name": "海顺转债",
+          "diagnosis": "收入增长，盈利修复未证实",
+          "evidence": "营业利润为正，归母受所得税影响",
+          "counter": "并表毛利承压、退税影响现金",
+          "sources": [
+            {
+              "bond_key": "SZ:123183",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225517249.PDF",
+              "pages": "半年报7、18—20、54—56、59—61"
+            },
+            {
+              "bond_key": "SZ:123183",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225382544.PDF",
+              "pages": "评级PDF3"
+            }
+          ]
+        },
+        {
+          "bond_key": "SZ:123250",
+          "bond_name": "嘉益转债",
+          "diagnosis": "订单承压，盈利信用有缓冲",
+          "evidence": "扣非1.60亿、经营现金1.04亿",
+          "counter": "客户集中、汇率与现金回落仍需跟踪",
+          "sources": [
+            {
+              "bond_key": "SZ:123250",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225527543.PDF",
+              "pages": "半年报7、9—10、14、21、51—54"
+            },
+            {
+              "bond_key": "SZ:123250",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225387216.PDF",
+              "pages": "评级PDF3"
+            }
+          ]
+        }
+      ],
+      "deep_dive": {
+        "title": "海顺：增长来源与盈利兑现",
+        "bond_key": "SZ:123183",
+        "question": "收入增长19.64%，是否证明盈利反转？",
+        "method": "拆辨并表与业务结构，核验增长有没有转成扣非利润和持续经营现金。",
+        "test": "增长含正一包装并表，毛利率下降；营业利润为正但归母受所得税影响，现金含退税。",
+        "counter": "客户资质、技术黏性、AA−和现金缓冲支持继续研究。",
+        "conclusion": "修复是有条件假设，尚非已实现事实；价格是否有足够补偿交给B。",
+        "change_condition": "高附加值产品和产能利用率改善，扣非转正且去除退税影响后现金仍改善。",
+        "spoken": "海顺收入增长19.64%，能否证明盈利反转？我先拆增长来源，再检查利润和现金。增长含正一包装并表，毛利率从22.30%降到20.73%。反证也要完整：营业利润为正，归母亏损受所得税费用抬升影响，不能直接说主营亏损；经营现金改善又含留抵退税因素。因此盈利修复仍需产品结构和回款兑现，价格有没有足够补偿交给B，而不是按增长率作结论。",
+        "chart": {
+          "type": "bar",
+          "title": "同口径利润与经营现金",
+          "unit": "亿元",
+          "categories": [
+            "2025H1",
+            "2026H1"
+          ],
+          "series": [
+            {
+              "name": "归母净利",
+              "values": [
+                0.271182,
+                -0.158464
+              ],
+              "fill": "#296D8C"
+            },
+            {
+              "name": "经营现金流",
+              "values": [
+                -0.160466,
+                0.142333
+              ],
+              "fill": "#C26A48"
+            }
+          ],
+          "source_fields": [
+            [
+              {
+                "bond_key": "SZ:123183",
+                "field": "prior_h1_net_profit_yuan",
+                "scale": 100000000.0
+              },
+              {
+                "bond_key": "SZ:123183",
+                "field": "net_profit_yuan",
+                "scale": 100000000.0
+              }
+            ],
+            [
+              {
+                "bond_key": "SZ:123183",
+                "field": "prior_h1_operating_cashflow_yuan",
+                "scale": 100000000.0
+              },
+              {
+                "bond_key": "SZ:123183",
+                "field": "operating_cashflow_yuan",
+                "scale": 100000000.0
+              }
+            ]
+          ],
+          "footnote": "同为半年度口径；改善不等于扭亏，现金变化须解释来源。"
+        },
+        "sources": [
+          {
+            "bond_key": "SZ:123183",
+            "kind": "h1",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225517249.PDF",
+            "pages": "半年报7、18—20、54—56、59—61"
+          },
+          {
+            "bond_key": "SZ:123183",
+            "kind": "rating",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225382544.PDF",
+            "pages": "评级PDF3"
+          }
+        ],
+        "seconds": 40,
+        "slide_method": "拆增长来源，对照营业利润、毛利与税费。",
+        "slide_test": "营业利润为正；毛利下降、所得税放大净亏；退税影响现金。",
+        "slide_conclusion": "AA−和现金缓冲保留，盈利修复未证实；交B检验补偿。"
+      }
+    },
+    {
+      "owner": "A5",
+      "bond_keys": [
+        "SH:113633",
+        "SH:113659",
+        "SH:113703"
+      ],
+      "title": "A5 三券独立经营与信用诊断",
+      "overview_seconds": 25,
+      "overview_spoken": "科沃主业增长，但备货和国补应收高基数影响现金；莱克利润受汇兑侵蚀，现金分析要纳入存单与币种；翔26收入增长却经营流出，现金增加还含融资。三券看各自经营机制，不能把收入增长和账面现金都当成经营获现。",
+      "overview": [
+        {
+          "bond_key": "SH:113633",
+          "bond_name": "科沃转债",
+          "diagnosis": "主业增长，现金转化需跟踪",
+          "evidence": "扣非8.05亿；现金与AA提供缓冲",
+          "counter": "国补高基数和备货影响现金，非全假增长",
+          "sources": [
+            {
+              "bond_key": "SH:113633",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225493227.PDF",
+              "pages": "半年报6—7、11、15—16、62—65"
+            }
+          ]
+        },
+        {
+          "bond_key": "SH:113659",
+          "bond_name": "莱克转债",
+          "diagnosis": "汇兑侵蚀利润，现金资产有缓冲",
+          "evidence": "经营现金4.36亿；须看存单及币种",
+          "counter": "剔汇兑仍承压，短债与汇率风险保留",
+          "sources": [
+            {
+              "bond_key": "SH:113659",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225508259.PDF",
+              "pages": "半年报7、108、144—145"
+            },
+            {
+              "bond_key": "SH:113659",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225395621.PDF",
+              "pages": "评级PDF3、17、19"
+            }
+          ]
+        },
+        {
+          "bond_key": "SH:113703",
+          "bond_name": "翔26转债",
+          "diagnosis": "经营增长，回款尚未跟上",
+          "evidence": "收入+11.64%，经营现金−0.90亿",
+          "counter": "现金增加含融资，不能当作经营获现",
+          "sources": [
+            {
+              "bond_key": "SH:113703",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225501451.PDF",
+              "pages": "半年报7、14、18、48—53"
+            },
+            {
+              "bond_key": "SH:113703",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-17/1225427540.PDF",
+              "pages": "评级PDF3；半年报48—49"
+            }
+          ]
+        }
+      ],
+      "deep_dive": {
+        "title": "莱克：扣非、汇兑与现金资产一起看",
+        "bond_key": "SH:113659",
+        "question": "扣非近零和货币资金少于短借，能否直接判主营失效或资金不足？",
+        "method": "分辨汇兑影响与经营承压，并完整检查存单、币种、受限和债务期限。",
+        "test": "H1汇兑损失3.89亿；公司按15%税率剔汇兑后扣非仍降16.26%；H1大额存单49.11亿。",
+        "counter": "经营现金4.36亿、存单与历史授信提供缓冲；存单和外币现金不是即时人民币可用资金。",
+        "conclusion": "利润受到汇兑和经营压力，不能以扣非近零断言主营失效；信用须保留短债与币种约束。",
+        "change_condition": "扣非和经营回款改善，汇率敞口、存单到期与融资匹配有效；历史授信不能替代T核验。",
+        "spoken": "莱克扣非只有0.05亿元，能否直接说主营几乎失去盈利？我把汇兑和经营影响分开。半年报披露汇兑损失3.89亿元，公司按15%税率剔除汇兑后，扣非仍下降16.26%，这只是公司测算。现金分析还须纳入半年末49.11亿元大额存单，而不是只拿货币资金比短借。利润承压和资金缓冲同时存在，但存单期限、外币敞口与短债仍须核验，不能据此判定无风险。",
+        "chart": {
+          "type": "bar",
+          "title": "利润与现金不能单项解读",
+          "unit": "亿元",
+          "categories": [
+            "归母利润",
+            "扣非利润",
+            "经营现金流"
+          ],
+          "series": [
+            {
+              "name": "金额",
+              "values": [
+                2.317873,
+                0.049846,
+                4.358732
+              ],
+              "fill": "#296D8C"
+            }
+          ],
+          "source_fields": [
+            [
+              {
+                "bond_key": "SH:113659",
+                "field": "net_profit_yuan",
+                "scale": 100000000.0
+              },
+              {
+                "bond_key": "SH:113659",
+                "field": "deducted_profit_yuan",
+                "scale": 100000000.0
+              },
+              {
+                "bond_key": "SH:113659",
+                "field": "operating_cashflow_yuan",
+                "scale": 100000000.0
+              }
+            ]
+          ],
+          "footnote": "2026H1合并口径；不同报表项目不能直接当作可支配现金。",
+          "precision": 2
+        },
+        "sources": [
+          {
+            "bond_key": "SH:113659",
+            "kind": "h1",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225508259.PDF",
+            "pages": "半年报7、108、144—145"
+          },
+          {
+            "bond_key": "SH:113659",
+            "kind": "rating",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225395621.PDF",
+            "pages": "评级PDF17、19"
+          }
+        ],
+        "seconds": 40,
+        "slide_method": "分辨汇兑与经营，现金纳入存单、币种和期限。",
+        "slide_test": "公司15%税率剔汇兑测算：扣非仍降16.26%；存单提供反证。",
+        "slide_conclusion": "现金资产有缓冲；短债、存单期限和汇率敞口仍需核验。"
+      }
+    },
+    {
+      "owner": "A6",
+      "bond_keys": [
+        "SZ:123154",
+        "SZ:123235",
+        "SZ:127069"
+      ],
+      "title": "A6 三券独立经营与信用诊断",
+      "overview_seconds": 25,
+      "overview_spoken": "火星仍亏损和现金流出，已下修不能消除经营压力；亿田亏损收窄，但算力毛利为负；小熊利润下降，现金和AA−信用相对稳定。小家电与集成灶需求不同，既不能否定全部改善，也不能用转型或条款叙事替代盈利。",
+      "overview": [
+        {
+          "bond_key": "SZ:123154",
+          "bond_name": "火星转债",
+          "diagnosis": "亏损流出，条款改善不够",
+          "evidence": "扣非−1.36亿；评级降至A+",
+          "counter": "现金流出略收窄、已下修是反证",
+          "sources": [
+            {
+              "bond_key": "SZ:123154",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225524016.PDF",
+              "pages": "半年报7、9—10、17—18、39、47—52"
+            },
+            {
+              "bond_key": "SZ:123154",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225390258.PDF",
+              "pages": "评级PDF3"
+            }
+          ]
+        },
+        {
+          "bond_key": "SZ:123235",
+          "bond_name": "亿田转债",
+          "diagnosis": "亏损收窄，转型盈利未成",
+          "evidence": "归母−0.54亿，算力毛利率为负",
+          "counter": "现金缓冲与现金流出收窄必须保留",
+          "sources": [
+            {
+              "bond_key": "SZ:123235",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525611.PDF",
+              "pages": "半年报7、9、13—14、43—49、93"
+            },
+            {
+              "bond_key": "SZ:123235",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225389525.PDF",
+              "pages": "评级PDF3"
+            }
+          ]
+        },
+        {
+          "bond_key": "SZ:127069",
+          "bond_name": "小熊转债",
+          "diagnosis": "利润承压，现金信用相对稳",
+          "evidence": "经营现金2.04亿、AA−维持",
+          "counter": "受限现金、材料和获客成本仍有压力",
+          "sources": [
+            {
+              "bond_key": "SZ:127069",
+              "kind": "h1",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-14/1225471529.PDF",
+              "pages": "半年报7、9、16—19、41—47"
+            },
+            {
+              "bond_key": "SZ:127069",
+              "kind": "rating",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-16/1225371250.PDF",
+              "pages": "评级PDF3"
+            }
+          ]
+        }
+      ],
+      "deep_dive": {
+        "title": "亿田：亏损收窄与转型盈利分开",
+        "bond_key": "SZ:123235",
+        "question": "亏损收窄与算力收入，是否证明转型已经成功？",
+        "method": "同口径比较亏损与现金变化，再核验新业务收入、毛利和费用覆盖。",
+        "test": "亏损从0.72亿收窄至0.54亿，但算力业务毛利率−37.97%，经营现金仍负。",
+        "counter": "现金缓冲、亏损及经营现金流出收窄支持修复反方。",
+        "conclusion": "改善存在，尚未证明持续盈利；下修或有限不赎回安排不能代替经营兑现。",
+        "change_condition": "主营稳定、算力毛利改善且总体经营现金转正，再审条款持有边界。",
+        "spoken": "亿田亏损收窄，又有算力收入，是否证明转型成功？我先做同期比较，再检验新业务能否贡献利润。亏损从0.72亿元收窄至0.54亿元，经营现金流出也减少，这些改善应当保留。但算力收入已有兑现，毛利率却是负37.97%，公司仍亏损和现金流出。因此改善不等于转型盈利；需要主营稳定、新业务毛利和总体现金共同兑现，条款安排也不能替代这一步。",
+        "chart": {
+          "type": "bar",
+          "title": "同口径利润与经营现金",
+          "unit": "亿元",
+          "categories": [
+            "2025H1",
+            "2026H1"
+          ],
+          "series": [
+            {
+              "name": "归母净利",
+              "values": [
+                -0.716857,
+                -0.541006
+              ],
+              "fill": "#296D8C"
+            },
+            {
+              "name": "经营现金流",
+              "values": [
+                -1.585719,
+                -0.30232
+              ],
+              "fill": "#C26A48"
+            }
+          ],
+          "source_fields": [
+            [
+              {
+                "bond_key": "SZ:123235",
+                "field": "prior_h1_net_profit_yuan",
+                "scale": 100000000.0
+              },
+              {
+                "bond_key": "SZ:123235",
+                "field": "net_profit_yuan",
+                "scale": 100000000.0
+              }
+            ],
+            [
+              {
+                "bond_key": "SZ:123235",
+                "field": "prior_h1_operating_cashflow_yuan",
+                "scale": 100000000.0
+              },
+              {
+                "bond_key": "SZ:123235",
+                "field": "operating_cashflow_yuan",
+                "scale": 100000000.0
+              }
+            ]
+          ],
+          "footnote": "同为半年度口径；改善不等于扭亏，现金变化须解释来源。"
+        },
+        "sources": [
+          {
+            "bond_key": "SZ:123235",
+            "kind": "h1",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525611.PDF",
+            "pages": "半年报7、9、13—14、43—49、93"
+          },
+          {
+            "bond_key": "SZ:123235",
+            "kind": "rating",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225389525.PDF",
+            "pages": "评级PDF3"
+          }
+        ],
+        "seconds": 40,
+        "slide_method": "同口径比较亏损和现金，再核验新业务毛利。",
+        "slide_test": "亏损与现金流出收窄。\n算力毛利率−37.97%；现金缓冲是反证。",
+        "slide_conclusion": "改善存在，转型盈利未成；条款不能代替经营兑现。"
+      }
+    }
+  ],
+  "theme_units": [
+    {
+      "owner": "A1",
+      "theme": "industry_cost",
+      "title": "需求和成本的分化",
+      "seconds": 65,
+      "evidence_pool_keys": [
+        "SH:111002",
+        "SH:113625",
+        "SH:113633",
+        "SH:113646",
+        "SH:113655",
+        "SH:113659",
+        "SH:113670",
+        "SH:113693",
+        "SH:113703",
+        "SZ:123072",
+        "SZ:123154",
+        "SZ:123183",
+        "SZ:123229",
+        "SZ:123235",
+        "SZ:123250",
+        "SZ:127044",
+        "SZ:127047",
+        "SZ:127069"
+      ],
+      "example_bond_keys": [
+        "SH:111002",
+        "SH:113625",
+        "SZ:127044",
+        "SZ:123250",
+        "SH:113633",
+        "SZ:123235"
+      ],
+      "question": "两大课程行业能否代表同一经营周期？",
+      "method": "18券按真实业务驱动细分，再对照需求与成本如何传至财务。",
+      "test": "特纸增产、地产链收缩、出口订单与品牌增长方向不同。",
+      "conclusion": "先辨认经营机制，收入同向不保证风险同向。",
+      "counter": "发行人行业表述不能扩大为全行业统计；增收仍须检验现金和债务。",
+      "spoken": "全池有12只轻工和6只家电，但这两个标签不足以回答投资问题。我按需求和成本传导重读18券：地产链关注装修和回款，纸与功能包装关注产能、原料和产品结构，出口企业关注订单和汇率，品牌家电关注新品与零件成本。图中按这些机制选出代表券，特纸与科沃增长，江山和亿田收缩，并非轻工或家电全部同向。反证是增长也可能伴随融资、库存和费用压力。因此行业只建立经营解释，最终要落到持续利润和现金，而不能按行业标签选买入标的。",
+      "chart": {
+        "type": "bar",
+        "title": "不同经营机制下的收入变化",
+        "unit": "营业收入同比（%）",
+        "categories": [
+          "特纸",
+          "江山",
+          "蒙娜",
+          "嘉益",
+          "科沃",
+          "亿田"
+        ],
+        "series": [
+          {
+            "name": "收入同比",
+            "values": [
+              18.756708,
+              -49.790894,
+              -8.657272,
+              -26.102227,
+              19.184393,
+              -52.92538
+            ],
+            "fill": "#296D8C"
+          }
+        ],
+        "source_fields": [
+          [
+            {
+              "bond_key": "SH:111002",
+              "field": "revenue_yoy_pct",
+              "scale": 1
+            },
+            {
+              "bond_key": "SH:113625",
+              "field": "revenue_yoy_pct",
+              "scale": 1
+            },
+            {
+              "bond_key": "SZ:127044",
+              "field": "revenue_yoy_pct",
+              "scale": 1
+            },
+            {
+              "bond_key": "SZ:123250",
+              "field": "revenue_yoy_pct",
+              "scale": 1
+            },
+            {
+              "bond_key": "SH:113633",
+              "field": "revenue_yoy_pct",
+              "scale": 1
+            },
+            {
+              "bond_key": "SZ:123235",
+              "field": "revenue_yoy_pct",
+              "scale": 1
+            }
+          ]
+        ],
+        "footnote": "2026H1合并口径；正负号保留。金额或增长率不构成推荐排序。"
+      },
+      "evidence_table": [],
+      "sources": [
+        {
+          "bond_key": "SH:111002",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-08/1225463398.PDF",
+          "pages": "半年报6、10—14、45—47、93"
+        },
+        {
+          "bond_key": "SH:113625",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-17/1225476065.PDF",
+          "pages": "半年报6、19、24、50—52"
+        },
+        {
+          "bond_key": "SH:113633",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225493227.PDF",
+          "pages": "半年报6—7、11、15—16、62—65"
+        },
+        {
+          "bond_key": "SH:113646",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-01/1225451568.PDF",
+          "pages": "半年报6、9、13、19—20、45、47—49"
+        },
+        {
+          "bond_key": "SH:113655",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525504.PDF",
+          "pages": "半年报6、14—19、56—58"
+        },
+        {
+          "bond_key": "SH:113659",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225508259.PDF",
+          "pages": "半年报7、108、144—145"
+        },
+        {
+          "bond_key": "SH:113670",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225507089.PDF",
+          "pages": "半年报5、10—14、16、39—41"
+        },
+        {
+          "bond_key": "SH:113693",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225520523.PDF",
+          "pages": "半年报6、25、45、74—76"
+        },
+        {
+          "bond_key": "SH:113703",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225501451.PDF",
+          "pages": "半年报7、14、18、48—53"
+        },
+        {
+          "bond_key": "SZ:123072",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225530258.PDF",
+          "pages": "半年报7、9—18、19、50—52"
+        },
+        {
+          "bond_key": "SZ:123154",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225524016.PDF",
+          "pages": "半年报7、9—10、17—18、39、47—52"
+        },
+        {
+          "bond_key": "SZ:123183",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225517249.PDF",
+          "pages": "半年报7、18—20、54—56、59—61"
+        },
+        {
+          "bond_key": "SZ:123229",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-18/1225476325.PDF",
+          "pages": "半年报9、12、23—25、58—61"
+        },
+        {
+          "bond_key": "SZ:123235",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525611.PDF",
+          "pages": "半年报7、9、13—14、43—49、93"
+        },
+        {
+          "bond_key": "SZ:123250",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225527543.PDF",
+          "pages": "半年报7、9—10、14、21、51—54"
+        },
+        {
+          "bond_key": "SZ:127044",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225503489.PDF",
+          "pages": "半年报7、12—14、39—41"
+        },
+        {
+          "bond_key": "SZ:127047",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225499873.PDF",
+          "pages": "半年报8、15—17、42—44；评级公告1"
+        },
+        {
+          "bond_key": "SZ:127069",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-14/1225471529.PDF",
+          "pages": "半年报7、9、16—19、41—47"
+        },
+        {
+          "bond_key": "SH:111002",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-01/1225399328.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113625",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385362.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113646",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225380842.PDF",
+          "pages": "半年报45（评级PDF为扫描件）"
+        },
+        {
+          "bond_key": "SH:113655",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390002.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113659",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225395621.PDF",
+          "pages": "评级PDF3、17、19"
+        },
+        {
+          "bond_key": "SH:113670",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225394755.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113693",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225387114.PDF",
+          "pages": "评级结果公告PDF1"
+        },
+        {
+          "bond_key": "SH:113703",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-17/1225427540.PDF",
+          "pages": "评级PDF3；半年报48—49"
+        },
+        {
+          "bond_key": "SZ:123072",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-24/1225385208.PDF",
+          "pages": "评级PDF4"
+        },
+        {
+          "bond_key": "SZ:123154",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225390258.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123183",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225382544.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123229",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-29/1225394145.PDF",
+          "pages": "评级PDF4；半年报58"
+        },
+        {
+          "bond_key": "SZ:123235",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225389525.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123250",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225387216.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:127044",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385901.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:127047",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390443.PDF",
+          "pages": "评级结果公告PDF1"
+        },
+        {
+          "bond_key": "SZ:127069",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-16/1225371250.PDF",
+          "pages": "评级PDF3"
+        }
+      ],
+      "split": {
+        "overview_seconds": 25,
+        "analysis_seconds": 40,
+        "optional": true
+      },
+      "slide_method": "18券按真实需求和成本机制细分，再看财务传导。",
+      "slide_test": "增产、地产链、出口和品牌增长方向不同；增收也可能增融资压力",
+      "slide_conclusion": "行业建立解释；经营结果才支持判断，不能用发行人代表整个行业"
+    },
+    {
+      "owner": "A2",
+      "theme": "business_sources",
+      "title": "增长来源与盈利兑现",
+      "seconds": 65,
+      "evidence_pool_keys": [
+        "SH:111002",
+        "SH:113625",
+        "SH:113633",
+        "SH:113646",
+        "SH:113655",
+        "SH:113659",
+        "SH:113670",
+        "SH:113693",
+        "SH:113703",
+        "SZ:123072",
+        "SZ:123154",
+        "SZ:123183",
+        "SZ:123229",
+        "SZ:123235",
+        "SZ:123250",
+        "SZ:127044",
+        "SZ:127047",
+        "SZ:127069"
+      ],
+      "example_bond_keys": [
+        "SH:111002",
+        "SH:113646",
+        "SZ:123183",
+        "SZ:123235"
+      ],
+      "question": "收入或新业务增长是否具有同样价值？",
+      "method": "分辨产能销售、并表、业务出清和转型，再看盈利贡献。",
+      "test": "特纸新增产能已有销售兑现；海顺含并表；永吉新业务增长但扣非负；亿田算力毛利负。",
+      "conclusion": "增长来源决定下一步需检验什么，不能把新收入都当第二增长曲线。",
+      "counter": "新业务收入、客户资质与技术仍是真实支持；未盈利不等于永远失败。",
+      "spoken": "业务结构是连接行业与财务的第二步。我对18券采用同一检查：增长是销量、有机订单、并购并表，还是业务转型，它有没有形成利润。特纸产能释放已有销量和扣非盈利；海顺19.64%的增长含并表，仍未盈利；永吉境外业务增长要与烟标出清和扣非亏损一起看；亿田算力已有收入，毛利率却为负。正反证都保留。由此不能把增长率或新业务名字直接写成投资结论，接下来要检查盈利来源和现金兑现。",
+      "chart": {
+        "type": "bar",
+        "title": "增长率背后的来源不同",
+        "unit": "营业收入同比（%）",
+        "categories": [
+          "特纸",
+          "永吉",
+          "海顺",
+          "亿田"
+        ],
+        "series": [
+          {
+            "name": "收入同比",
+            "values": [
+              18.756708,
+              -16.654917,
+              19.644557,
+              -52.92538
+            ],
+            "fill": "#296D8C"
+          }
+        ],
+        "source_fields": [
+          [
+            {
+              "bond_key": "SH:111002",
+              "field": "revenue_yoy_pct",
+              "scale": 1
+            },
+            {
+              "bond_key": "SH:113646",
+              "field": "revenue_yoy_pct",
+              "scale": 1
+            },
+            {
+              "bond_key": "SZ:123183",
+              "field": "revenue_yoy_pct",
+              "scale": 1
+            },
+            {
+              "bond_key": "SZ:123235",
+              "field": "revenue_yoy_pct",
+              "scale": 1
+            }
+          ]
+        ],
+        "footnote": "2026H1合并口径；正负号保留。金额或增长率不构成推荐排序。"
+      },
+      "evidence_table": [],
+      "sources": [
+        {
+          "bond_key": "SH:111002",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-08/1225463398.PDF",
+          "pages": "半年报6、10—14、45—47、93"
+        },
+        {
+          "bond_key": "SH:113625",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-17/1225476065.PDF",
+          "pages": "半年报6、19、24、50—52"
+        },
+        {
+          "bond_key": "SH:113633",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225493227.PDF",
+          "pages": "半年报6—7、11、15—16、62—65"
+        },
+        {
+          "bond_key": "SH:113646",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-01/1225451568.PDF",
+          "pages": "半年报6、9、13、19—20、45、47—49"
+        },
+        {
+          "bond_key": "SH:113655",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525504.PDF",
+          "pages": "半年报6、14—19、56—58"
+        },
+        {
+          "bond_key": "SH:113659",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225508259.PDF",
+          "pages": "半年报7、108、144—145"
+        },
+        {
+          "bond_key": "SH:113670",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225507089.PDF",
+          "pages": "半年报5、10—14、16、39—41"
+        },
+        {
+          "bond_key": "SH:113693",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225520523.PDF",
+          "pages": "半年报6、25、45、74—76"
+        },
+        {
+          "bond_key": "SH:113703",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225501451.PDF",
+          "pages": "半年报7、14、18、48—53"
+        },
+        {
+          "bond_key": "SZ:123072",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225530258.PDF",
+          "pages": "半年报7、9—18、19、50—52"
+        },
+        {
+          "bond_key": "SZ:123154",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225524016.PDF",
+          "pages": "半年报7、9—10、17—18、39、47—52"
+        },
+        {
+          "bond_key": "SZ:123183",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225517249.PDF",
+          "pages": "半年报7、18—20、54—56、59—61"
+        },
+        {
+          "bond_key": "SZ:123229",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-18/1225476325.PDF",
+          "pages": "半年报9、12、23—25、58—61"
+        },
+        {
+          "bond_key": "SZ:123235",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525611.PDF",
+          "pages": "半年报7、9、13—14、43—49、93"
+        },
+        {
+          "bond_key": "SZ:123250",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225527543.PDF",
+          "pages": "半年报7、9—10、14、21、51—54"
+        },
+        {
+          "bond_key": "SZ:127044",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225503489.PDF",
+          "pages": "半年报7、12—14、39—41"
+        },
+        {
+          "bond_key": "SZ:127047",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225499873.PDF",
+          "pages": "半年报8、15—17、42—44；评级公告1"
+        },
+        {
+          "bond_key": "SZ:127069",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-14/1225471529.PDF",
+          "pages": "半年报7、9、16—19、41—47"
+        },
+        {
+          "bond_key": "SH:111002",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-01/1225399328.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113625",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385362.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113646",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225380842.PDF",
+          "pages": "半年报45（评级PDF为扫描件）"
+        },
+        {
+          "bond_key": "SH:113655",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390002.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113659",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225395621.PDF",
+          "pages": "评级PDF3、17、19"
+        },
+        {
+          "bond_key": "SH:113670",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225394755.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113693",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225387114.PDF",
+          "pages": "评级结果公告PDF1"
+        },
+        {
+          "bond_key": "SH:113703",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-17/1225427540.PDF",
+          "pages": "评级PDF3；半年报48—49"
+        },
+        {
+          "bond_key": "SZ:123072",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-24/1225385208.PDF",
+          "pages": "评级PDF4"
+        },
+        {
+          "bond_key": "SZ:123154",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225390258.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123183",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225382544.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123229",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-29/1225394145.PDF",
+          "pages": "评级PDF4；半年报58"
+        },
+        {
+          "bond_key": "SZ:123235",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225389525.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123250",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225387216.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:127044",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385901.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:127047",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390443.PDF",
+          "pages": "评级结果公告PDF1"
+        },
+        {
+          "bond_key": "SZ:127069",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-16/1225371250.PDF",
+          "pages": "评级PDF3"
+        }
+      ],
+      "split": {
+        "overview_seconds": 25,
+        "analysis_seconds": 40,
+        "optional": true
+      },
+      "slide_method": "辨认销量、并表、出清与转型，再检验利润贡献。",
+      "slide_test": "特纸销量兑现；海顺含并表；永吉与亿田新业务仍须证明持续利润",
+      "slide_conclusion": "新收入是真实支持，增长率和新业务名字都不足以证明反转"
+    },
+    {
+      "owner": "A3",
+      "theme": "earnings_quality",
+      "title": "盈利质量的核验",
+      "seconds": 65,
+      "evidence_pool_keys": [
+        "SH:111002",
+        "SH:113625",
+        "SH:113633",
+        "SH:113646",
+        "SH:113655",
+        "SH:113659",
+        "SH:113670",
+        "SH:113693",
+        "SH:113703",
+        "SZ:123072",
+        "SZ:123154",
+        "SZ:123183",
+        "SZ:123229",
+        "SZ:123235",
+        "SZ:123250",
+        "SZ:127044",
+        "SZ:127047",
+        "SZ:127069"
+      ],
+      "example_bond_keys": [
+        "SH:113633",
+        "SH:113659",
+        "SH:113646",
+        "SZ:123229"
+      ],
+      "question": "账面盈利能否支持持续经营判断？",
+      "method": "比较归母与扣非，再核查投资收益、汇兑、低基数和新业务。",
+      "test": "永吉归母正而扣非负；科沃仍有8.05亿扣非；莱克须辨认汇兑；艾录小额盈利不抹除信用约束。",
+      "conclusion": "既不把归母都当主业，也不把扣非下降机械归因主营失效。",
+      "counter": "扣非仍含真实经营和汇兑影响；剔汇兑测算不是可预测的常态利润。",
+      "spoken": "盈利质量的全池核验先分归母与扣非，再追问差别来自哪里。永吉0.82亿元归母利润与扣非亏损背离，投资收益不能外推经营；科沃扣非仍有8.05亿元，因此增长并非全是非经常收益。莱克则提醒我们，扣非本身也包含汇兑影响：公司按15%税率剔除汇兑后，扣非仍降16.26%，这个测算既修正了过度悲观，也没有证明经营完全恢复。艾录小额盈利有修复证据，却仍受评级约束。最终判断依赖来源核验和现金，而非一个利润指标。",
+      "chart": {
+        "type": "bar",
+        "title": "归母与扣非的差别",
+        "unit": "亿元",
+        "categories": [
+          "科沃",
+          "莱克",
+          "永吉"
+        ],
+        "series": [
+          {
+            "name": "归母利润",
+            "values": [
+              12.47851,
+              2.317873,
+              0.81919
+            ],
+            "fill": "#296D8C"
+          },
+          {
+            "name": "扣非利润",
+            "values": [
+              8.053986,
+              0.049846,
+              -0.252172
+            ],
+            "fill": "#C26A48"
+          }
+        ],
+        "source_fields": [
+          [
+            {
+              "bond_key": "SH:113633",
+              "field": "net_profit_yuan",
+              "scale": 100000000.0
+            },
+            {
+              "bond_key": "SH:113659",
+              "field": "net_profit_yuan",
+              "scale": 100000000.0
+            },
+            {
+              "bond_key": "SH:113646",
+              "field": "net_profit_yuan",
+              "scale": 100000000.0
+            }
+          ],
+          [
+            {
+              "bond_key": "SH:113633",
+              "field": "deducted_profit_yuan",
+              "scale": 100000000.0
+            },
+            {
+              "bond_key": "SH:113659",
+              "field": "deducted_profit_yuan",
+              "scale": 100000000.0
+            },
+            {
+              "bond_key": "SH:113646",
+              "field": "deducted_profit_yuan",
+              "scale": 100000000.0
+            }
+          ]
+        ],
+        "footnote": "2026H1亿元；比较利润来源，不按绝对规模排名；莱克汇兑影响另解释。",
+        "precision": 2
+      },
+      "evidence_table": [],
+      "sources": [
+        {
+          "bond_key": "SH:111002",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-08/1225463398.PDF",
+          "pages": "半年报6、10—14、45—47、93"
+        },
+        {
+          "bond_key": "SH:113625",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-17/1225476065.PDF",
+          "pages": "半年报6、19、24、50—52"
+        },
+        {
+          "bond_key": "SH:113633",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225493227.PDF",
+          "pages": "半年报6—7、11、15—16、62—65"
+        },
+        {
+          "bond_key": "SH:113646",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-01/1225451568.PDF",
+          "pages": "半年报6、9、13、19—20、45、47—49"
+        },
+        {
+          "bond_key": "SH:113655",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525504.PDF",
+          "pages": "半年报6、14—19、56—58"
+        },
+        {
+          "bond_key": "SH:113659",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225508259.PDF",
+          "pages": "半年报7、108、144—145"
+        },
+        {
+          "bond_key": "SH:113670",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225507089.PDF",
+          "pages": "半年报5、10—14、16、39—41"
+        },
+        {
+          "bond_key": "SH:113693",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225520523.PDF",
+          "pages": "半年报6、25、45、74—76"
+        },
+        {
+          "bond_key": "SH:113703",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225501451.PDF",
+          "pages": "半年报7、14、18、48—53"
+        },
+        {
+          "bond_key": "SZ:123072",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225530258.PDF",
+          "pages": "半年报7、9—18、19、50—52"
+        },
+        {
+          "bond_key": "SZ:123154",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225524016.PDF",
+          "pages": "半年报7、9—10、17—18、39、47—52"
+        },
+        {
+          "bond_key": "SZ:123183",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225517249.PDF",
+          "pages": "半年报7、18—20、54—56、59—61"
+        },
+        {
+          "bond_key": "SZ:123229",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-18/1225476325.PDF",
+          "pages": "半年报9、12、23—25、58—61"
+        },
+        {
+          "bond_key": "SZ:123235",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525611.PDF",
+          "pages": "半年报7、9、13—14、43—49、93"
+        },
+        {
+          "bond_key": "SZ:123250",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225527543.PDF",
+          "pages": "半年报7、9—10、14、21、51—54"
+        },
+        {
+          "bond_key": "SZ:127044",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225503489.PDF",
+          "pages": "半年报7、12—14、39—41"
+        },
+        {
+          "bond_key": "SZ:127047",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225499873.PDF",
+          "pages": "半年报8、15—17、42—44；评级公告1"
+        },
+        {
+          "bond_key": "SZ:127069",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-14/1225471529.PDF",
+          "pages": "半年报7、9、16—19、41—47"
+        },
+        {
+          "bond_key": "SH:111002",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-01/1225399328.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113625",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385362.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113646",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225380842.PDF",
+          "pages": "半年报45（评级PDF为扫描件）"
+        },
+        {
+          "bond_key": "SH:113655",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390002.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113659",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225395621.PDF",
+          "pages": "评级PDF3、17、19"
+        },
+        {
+          "bond_key": "SH:113670",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225394755.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113693",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225387114.PDF",
+          "pages": "评级结果公告PDF1"
+        },
+        {
+          "bond_key": "SH:113703",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-17/1225427540.PDF",
+          "pages": "评级PDF3；半年报48—49"
+        },
+        {
+          "bond_key": "SZ:123072",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-24/1225385208.PDF",
+          "pages": "评级PDF4"
+        },
+        {
+          "bond_key": "SZ:123154",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225390258.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123183",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225382544.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123229",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-29/1225394145.PDF",
+          "pages": "评级PDF4；半年报58"
+        },
+        {
+          "bond_key": "SZ:123235",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225389525.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123250",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225387216.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:127044",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385901.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:127047",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390443.PDF",
+          "pages": "评级结果公告PDF1"
+        },
+        {
+          "bond_key": "SZ:127069",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-16/1225371250.PDF",
+          "pages": "评级PDF3"
+        }
+      ],
+      "split": {
+        "overview_seconds": 25,
+        "analysis_seconds": 40,
+        "optional": true
+      },
+      "slide_method": "区分归母与扣非，再核查投资、汇兑和低基数。",
+      "slide_test": "永吉盈利背离；科沃扣非仍强；莱克剔汇兑测算也仍承压",
+      "slide_conclusion": "保留盈利反证；扣非也含汇兑，不能机械等同常态主营利润"
+    },
+    {
+      "owner": "A4",
+      "theme": "cash_credit",
+      "title": "现金来源与偿债信用",
+      "seconds": 65,
+      "evidence_pool_keys": [
+        "SH:111002",
+        "SH:113625",
+        "SH:113633",
+        "SH:113646",
+        "SH:113655",
+        "SH:113659",
+        "SH:113670",
+        "SH:113693",
+        "SH:113703",
+        "SZ:123072",
+        "SZ:123154",
+        "SZ:123183",
+        "SZ:123229",
+        "SZ:123235",
+        "SZ:123250",
+        "SZ:127044",
+        "SZ:127047",
+        "SZ:127069"
+      ],
+      "example_bond_keys": [
+        "SH:111002",
+        "SH:113659",
+        "SZ:127044",
+        "SZ:127047",
+        "SZ:127069"
+      ],
+      "question": "现金增加或正现金流，是否证明安全？",
+      "method": "追查现金来源、完整现金类资产与债务期限，再用评级作交叉证据。",
+      "test": "蒙娜含保证金，帝欧含应付款，海顺含退税；特纸投资压力，莱克存单与币种必须纳入。",
+      "conclusion": "现金改善有不同可持续性，信用判断须看期限匹配与融资条件。",
+      "counter": "正现金、存单、AA评级或授信提供缓冲；不等于T全部可用或没有风险。",
+      "spoken": "现金与信用不能只看一个正负号。18券中，蒙娜现金改善含订货保证金，帝欧部分来自应付款增加，海顺还含退税，这些来源的持续性不同。特纸的正经营现金又远小于投资支出。莱克则不能只拿货币资金比短借：半年末有49.11亿元大额存单，但存单期限和外币现金仍有限制；评级披露的1.20现金短债比与122.18亿元未用授信是三月末状态。方法是完整看来源、币种、受限和期限，评级提供交叉证据。承认缓冲，同时保留偿债条件，才能交给B检验风险补偿。",
+      "chart": {
+        "type": "bar",
+        "title": "盈利与现金的不同信息",
+        "unit": "亿元",
+        "categories": [
+          "特纸",
+          "莱克",
+          "蒙娜",
+          "帝欧",
+          "小熊"
+        ],
+        "series": [
+          {
+            "name": "扣非利润",
+            "values": [
+              2.260507,
+              0.049846,
+              0.501436,
+              -0.772257,
+              1.094494
+            ],
+            "fill": "#296D8C"
+          },
+          {
+            "name": "经营现金",
+            "values": [
+              1.05934,
+              4.358732,
+              1.816064,
+              1.369035,
+              2.036558
+            ],
+            "fill": "#C26A48"
+          }
+        ],
+        "source_fields": [
+          [
+            {
+              "bond_key": "SH:111002",
+              "field": "deducted_profit_yuan",
+              "scale": 100000000.0
+            },
+            {
+              "bond_key": "SH:113659",
+              "field": "deducted_profit_yuan",
+              "scale": 100000000.0
+            },
+            {
+              "bond_key": "SZ:127044",
+              "field": "deducted_profit_yuan",
+              "scale": 100000000.0
+            },
+            {
+              "bond_key": "SZ:127047",
+              "field": "deducted_profit_yuan",
+              "scale": 100000000.0
+            },
+            {
+              "bond_key": "SZ:127069",
+              "field": "deducted_profit_yuan",
+              "scale": 100000000.0
+            }
+          ],
+          [
+            {
+              "bond_key": "SH:111002",
+              "field": "operating_cashflow_yuan",
+              "scale": 100000000.0
+            },
+            {
+              "bond_key": "SH:113659",
+              "field": "operating_cashflow_yuan",
+              "scale": 100000000.0
+            },
+            {
+              "bond_key": "SZ:127044",
+              "field": "operating_cashflow_yuan",
+              "scale": 100000000.0
+            },
+            {
+              "bond_key": "SZ:127047",
+              "field": "operating_cashflow_yuan",
+              "scale": 100000000.0
+            },
+            {
+              "bond_key": "SZ:127069",
+              "field": "operating_cashflow_yuan",
+              "scale": 100000000.0
+            }
+          ]
+        ],
+        "footnote": "现金含营运资本和退税等影响；莱克须纳入存单/币种；不可用单比值推导违约。",
+        "precision": 2
+      },
+      "evidence_table": [],
+      "sources": [
+        {
+          "bond_key": "SH:111002",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-08/1225463398.PDF",
+          "pages": "半年报6、10—14、45—47、93"
+        },
+        {
+          "bond_key": "SH:113625",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-17/1225476065.PDF",
+          "pages": "半年报6、19、24、50—52"
+        },
+        {
+          "bond_key": "SH:113633",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225493227.PDF",
+          "pages": "半年报6—7、11、15—16、62—65"
+        },
+        {
+          "bond_key": "SH:113646",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-01/1225451568.PDF",
+          "pages": "半年报6、9、13、19—20、45、47—49"
+        },
+        {
+          "bond_key": "SH:113655",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525504.PDF",
+          "pages": "半年报6、14—19、56—58"
+        },
+        {
+          "bond_key": "SH:113659",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225508259.PDF",
+          "pages": "半年报7、108、144—145"
+        },
+        {
+          "bond_key": "SH:113670",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225507089.PDF",
+          "pages": "半年报5、10—14、16、39—41"
+        },
+        {
+          "bond_key": "SH:113693",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225520523.PDF",
+          "pages": "半年报6、25、45、74—76"
+        },
+        {
+          "bond_key": "SH:113703",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225501451.PDF",
+          "pages": "半年报7、14、18、48—53"
+        },
+        {
+          "bond_key": "SZ:123072",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225530258.PDF",
+          "pages": "半年报7、9—18、19、50—52"
+        },
+        {
+          "bond_key": "SZ:123154",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225524016.PDF",
+          "pages": "半年报7、9—10、17—18、39、47—52"
+        },
+        {
+          "bond_key": "SZ:123183",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225517249.PDF",
+          "pages": "半年报7、18—20、54—56、59—61"
+        },
+        {
+          "bond_key": "SZ:123229",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-18/1225476325.PDF",
+          "pages": "半年报9、12、23—25、58—61"
+        },
+        {
+          "bond_key": "SZ:123235",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525611.PDF",
+          "pages": "半年报7、9、13—14、43—49、93"
+        },
+        {
+          "bond_key": "SZ:123250",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225527543.PDF",
+          "pages": "半年报7、9—10、14、21、51—54"
+        },
+        {
+          "bond_key": "SZ:127044",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225503489.PDF",
+          "pages": "半年报7、12—14、39—41"
+        },
+        {
+          "bond_key": "SZ:127047",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225499873.PDF",
+          "pages": "半年报8、15—17、42—44；评级公告1"
+        },
+        {
+          "bond_key": "SZ:127069",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-14/1225471529.PDF",
+          "pages": "半年报7、9、16—19、41—47"
+        },
+        {
+          "bond_key": "SH:111002",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-01/1225399328.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113625",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385362.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113646",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225380842.PDF",
+          "pages": "半年报45（评级PDF为扫描件）"
+        },
+        {
+          "bond_key": "SH:113655",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390002.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113659",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225395621.PDF",
+          "pages": "评级PDF3、17、19"
+        },
+        {
+          "bond_key": "SH:113670",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225394755.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113693",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225387114.PDF",
+          "pages": "评级结果公告PDF1"
+        },
+        {
+          "bond_key": "SH:113703",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-17/1225427540.PDF",
+          "pages": "评级PDF3；半年报48—49"
+        },
+        {
+          "bond_key": "SZ:123072",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-24/1225385208.PDF",
+          "pages": "评级PDF4"
+        },
+        {
+          "bond_key": "SZ:123154",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225390258.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123183",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225382544.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123229",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-29/1225394145.PDF",
+          "pages": "评级PDF4；半年报58"
+        },
+        {
+          "bond_key": "SZ:123235",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225389525.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123250",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225387216.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:127044",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385901.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:127047",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390443.PDF",
+          "pages": "评级结果公告PDF1"
+        },
+        {
+          "bond_key": "SZ:127069",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-16/1225371250.PDF",
+          "pages": "评级PDF3"
+        }
+      ],
+      "split": {
+        "overview_seconds": 25,
+        "analysis_seconds": 40,
+        "optional": true
+      },
+      "slide_method": "看现金来源、资产口径、币种、受限和债务期限。",
+      "slide_test": "保证金、应付款、退税影响现金；莱克还有存单，Q1授信不是T资金",
+      "slide_conclusion": "现金和评级提供缓冲，不能单比值推导违约，也不能推定无风险"
+    },
+    {
+      "owner": "A5",
+      "theme": "operating_conditions",
+      "title": "未来六个月的经营条件",
+      "seconds": 65,
+      "evidence_pool_keys": [
+        "SH:111002",
+        "SH:113625",
+        "SH:113633",
+        "SH:113646",
+        "SH:113655",
+        "SH:113659",
+        "SH:113670",
+        "SH:113693",
+        "SH:113703",
+        "SZ:123072",
+        "SZ:123154",
+        "SZ:123183",
+        "SZ:123229",
+        "SZ:123235",
+        "SZ:123250",
+        "SZ:127044",
+        "SZ:127047",
+        "SZ:127069"
+      ],
+      "example_bond_keys": [
+        "SH:111002",
+        "SZ:123183",
+        "SH:113659",
+        "SH:113633",
+        "SZ:127047",
+        "SZ:123235"
+      ],
+      "question": "怎样给出可检验展望而不虚构股价预测？",
+      "method": "把18券经营机制写成条件，并指定能改变当前判断的事实。",
+      "test": "每券同时保留支持、反证和改判条件；乐歌按实际到期截断。",
+      "conclusion": "A交出条件展望；价格能否补偿和持有路径由B检验。",
+      "counter": "业务兑现仍可能被转债价格、条款或期限抵消。",
+      "spoken": "未来六个月的展望使用经营条件，不另造股价预测模型。我把全池每券的当前判断转成可核验条件：特纸看产能是否持续变成现金，海顺看产品结构和扣非，莱克看回款及币种融资匹配，科沃看新品和备货回款，帝欧看扣非与偿债改善，亿田看主营和算力毛利。表里这些只是例券，另外12券也保留同规范条件；乐歌还必须按真实到期截断。每项条件都要和反证同时出现，条件未兑现不能当成已实现增长。随后B回答现价是否已经反映预期，以及下行能否承受。",
+      "chart": null,
+      "evidence_table": [
+        {
+          "bond_key": "SH:111002",
+          "bond_name": "特纸转债",
+          "condition": "产能变成利润与现金",
+          "counter": "扩张杠杆和资本投入"
+        },
+        {
+          "bond_key": "SZ:123183",
+          "bond_name": "海顺转债",
+          "condition": "结构改善、扣非和回款兑现",
+          "counter": "并表与退税不能外推"
+        },
+        {
+          "bond_key": "SH:113659",
+          "bond_name": "莱克转债",
+          "condition": "经营回款与币种融资匹配",
+          "counter": "汇兑、存单期限和短债"
+        },
+        {
+          "bond_key": "SH:113633",
+          "bond_name": "科沃转债",
+          "condition": "新品增长、备货回款改善",
+          "counter": "成本与现金转化"
+        },
+        {
+          "bond_key": "SZ:127047",
+          "bond_name": "帝欧转债",
+          "condition": "扣非修复、回款和融资改善",
+          "counter": "BBB+与经营亏损"
+        },
+        {
+          "bond_key": "SZ:123235",
+          "bond_name": "亿田转债",
+          "condition": "主营稳定、算力毛利转好",
+          "counter": "改善但仍亏损和流出"
+        }
+      ],
+      "sources": [
+        {
+          "bond_key": "SH:111002",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-08/1225463398.PDF",
+          "pages": "半年报6、10—14、45—47、93"
+        },
+        {
+          "bond_key": "SH:113625",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-17/1225476065.PDF",
+          "pages": "半年报6、19、24、50—52"
+        },
+        {
+          "bond_key": "SH:113633",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225493227.PDF",
+          "pages": "半年报6—7、11、15—16、62—65"
+        },
+        {
+          "bond_key": "SH:113646",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-01/1225451568.PDF",
+          "pages": "半年报6、9、13、19—20、45、47—49"
+        },
+        {
+          "bond_key": "SH:113655",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525504.PDF",
+          "pages": "半年报6、14—19、56—58"
+        },
+        {
+          "bond_key": "SH:113659",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225508259.PDF",
+          "pages": "半年报7、108、144—145"
+        },
+        {
+          "bond_key": "SH:113670",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225507089.PDF",
+          "pages": "半年报5、10—14、16、39—41"
+        },
+        {
+          "bond_key": "SH:113693",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225520523.PDF",
+          "pages": "半年报6、25、45、74—76"
+        },
+        {
+          "bond_key": "SH:113703",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225501451.PDF",
+          "pages": "半年报7、14、18、48—53"
+        },
+        {
+          "bond_key": "SZ:123072",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225530258.PDF",
+          "pages": "半年报7、9—18、19、50—52"
+        },
+        {
+          "bond_key": "SZ:123154",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225524016.PDF",
+          "pages": "半年报7、9—10、17—18、39、47—52"
+        },
+        {
+          "bond_key": "SZ:123183",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225517249.PDF",
+          "pages": "半年报7、18—20、54—56、59—61"
+        },
+        {
+          "bond_key": "SZ:123229",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-18/1225476325.PDF",
+          "pages": "半年报9、12、23—25、58—61"
+        },
+        {
+          "bond_key": "SZ:123235",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525611.PDF",
+          "pages": "半年报7、9、13—14、43—49、93"
+        },
+        {
+          "bond_key": "SZ:123250",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225527543.PDF",
+          "pages": "半年报7、9—10、14、21、51—54"
+        },
+        {
+          "bond_key": "SZ:127044",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225503489.PDF",
+          "pages": "半年报7、12—14、39—41"
+        },
+        {
+          "bond_key": "SZ:127047",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225499873.PDF",
+          "pages": "半年报8、15—17、42—44；评级公告1"
+        },
+        {
+          "bond_key": "SZ:127069",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-14/1225471529.PDF",
+          "pages": "半年报7、9、16—19、41—47"
+        },
+        {
+          "bond_key": "SH:111002",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-01/1225399328.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113625",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385362.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113646",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225380842.PDF",
+          "pages": "半年报45（评级PDF为扫描件）"
+        },
+        {
+          "bond_key": "SH:113655",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390002.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113659",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225395621.PDF",
+          "pages": "评级PDF3、17、19"
+        },
+        {
+          "bond_key": "SH:113670",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225394755.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113693",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225387114.PDF",
+          "pages": "评级结果公告PDF1"
+        },
+        {
+          "bond_key": "SH:113703",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-17/1225427540.PDF",
+          "pages": "评级PDF3；半年报48—49"
+        },
+        {
+          "bond_key": "SZ:123072",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-24/1225385208.PDF",
+          "pages": "评级PDF4"
+        },
+        {
+          "bond_key": "SZ:123154",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225390258.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123183",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225382544.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123229",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-29/1225394145.PDF",
+          "pages": "评级PDF4；半年报58"
+        },
+        {
+          "bond_key": "SZ:123235",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225389525.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123250",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225387216.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:127044",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385901.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:127047",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390443.PDF",
+          "pages": "评级结果公告PDF1"
+        },
+        {
+          "bond_key": "SZ:127069",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-16/1225371250.PDF",
+          "pages": "评级PDF3"
+        }
+      ],
+      "split": {
+        "overview_seconds": 25,
+        "analysis_seconds": 40,
+        "optional": true
+      },
+      "slide_method": "把经营机制写成条件，并明确什么事实会改判。",
+      "slide_test": "18券均有支持与反证；乐歌按实际到期截断",
+      "slide_conclusion": "业务展望须等兑现；即使兑现，仍要B检验价格、条款和路径风险"
+    },
+    {
+      "owner": "A6",
+      "theme": "issuer_terms",
+      "title": "条款状态与发行人行为",
+      "seconds": 65,
+      "evidence_pool_keys": [
+        "SH:111002",
+        "SH:113625",
+        "SH:113633",
+        "SH:113646",
+        "SH:113655",
+        "SH:113659",
+        "SH:113670",
+        "SH:113693",
+        "SH:113703",
+        "SZ:123072",
+        "SZ:123154",
+        "SZ:123183",
+        "SZ:123229",
+        "SZ:123235",
+        "SZ:123250",
+        "SZ:127044",
+        "SZ:127047",
+        "SZ:127069"
+      ],
+      "example_bond_keys": [
+        "SH:113693",
+        "SH:113633",
+        "SZ:127047",
+        "SZ:123235"
+      ],
+      "question": "条款权利能否被当成确定利好？",
+      "method": "按调整、提示、决议、实施与承诺期限分别读取原件；有效数值交由B1验收。",
+      "test": "科沃与志邦选择不下修，帝欧仅提示可能赎回；亿田有限承诺不覆盖整个半年。",
+      "conclusion": "条款约束需要进入持有判断，不能默认必然下修、强赎或继续不赎回。",
+      "counter": "主动下修与不赎回可改善阶段安排，但不能替代经营偿债。",
+      "spoken": "条款行为是最后一道经营判断边界。全池统一区分权益分派机械调价、主动下修、触发提示、董事会决议和实施。原件显示，志邦与科沃在提示条件后选择不下修，说明权利不是承诺；帝欧九月只是提示可能满足赎回，不能说已经决定强赎；亿田的承诺只覆盖九月二十四日至十二月二十三日，不能延伸到整个半年。已下修和有限不赎回的支持要保留，却不能消除经营亏损或融资压力。A解释这些行为及期限，B1核验有效参数，B再检验价格和退出风险。",
+      "chart": null,
+      "evidence_table": [
+        {
+          "bond_key": "SH:113693",
+          "bond_name": "志邦转债",
+          "date": "2026-08-04",
+          "event": "不下修决议",
+          "boundary": "触发提示不等于实施",
+          "source": {
+            "bond_key": "SH:113693",
+            "kind": "event",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-08-04/1225454303.PDF",
+            "pages": "原件全文"
+          }
+        },
+        {
+          "bond_key": "SH:113633",
+          "bond_name": "科沃转债",
+          "date": "2026-08-11",
+          "event": "不下修决议",
+          "boundary": "下修属于发行人裁量",
+          "source": {
+            "bond_key": "SH:113633",
+            "kind": "event",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-08-11/1225466110.PDF",
+            "pages": "原件全文"
+          }
+        },
+        {
+          "bond_key": "SZ:127047",
+          "bond_name": "帝欧转债",
+          "date": "2026-09-24",
+          "event": "可能赎回提示",
+          "boundary": "提示不等于已决定强赎",
+          "source": {
+            "bond_key": "SZ:127047",
+            "kind": "event",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-09-24/1225578589.PDF",
+            "pages": "原件全文"
+          }
+        },
+        {
+          "bond_key": "SZ:123235",
+          "bond_name": "亿田转债",
+          "date": "2026-09-23",
+          "event": "有限不赎回承诺",
+          "boundary": "9月24日至12月23日，未覆盖半年",
+          "source": {
+            "bond_key": "SZ:123235",
+            "kind": "event",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-09-23/1225579742.PDF",
+            "pages": "原件全文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "bond_key": "SH:111002",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-08/1225463398.PDF",
+          "pages": "半年报6、10—14、45—47、93"
+        },
+        {
+          "bond_key": "SH:113625",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-17/1225476065.PDF",
+          "pages": "半年报6、19、24、50—52"
+        },
+        {
+          "bond_key": "SH:113633",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225493227.PDF",
+          "pages": "半年报6—7、11、15—16、62—65"
+        },
+        {
+          "bond_key": "SH:113646",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-01/1225451568.PDF",
+          "pages": "半年报6、9、13、19—20、45、47—49"
+        },
+        {
+          "bond_key": "SH:113655",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525504.PDF",
+          "pages": "半年报6、14—19、56—58"
+        },
+        {
+          "bond_key": "SH:113659",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225508259.PDF",
+          "pages": "半年报7、108、144—145"
+        },
+        {
+          "bond_key": "SH:113670",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225507089.PDF",
+          "pages": "半年报5、10—14、16、39—41"
+        },
+        {
+          "bond_key": "SH:113693",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225520523.PDF",
+          "pages": "半年报6、25、45、74—76"
+        },
+        {
+          "bond_key": "SH:113703",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225501451.PDF",
+          "pages": "半年报7、14、18、48—53"
+        },
+        {
+          "bond_key": "SZ:123072",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225530258.PDF",
+          "pages": "半年报7、9—18、19、50—52"
+        },
+        {
+          "bond_key": "SZ:123154",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225524016.PDF",
+          "pages": "半年报7、9—10、17—18、39、47—52"
+        },
+        {
+          "bond_key": "SZ:123183",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225517249.PDF",
+          "pages": "半年报7、18—20、54—56、59—61"
+        },
+        {
+          "bond_key": "SZ:123229",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-18/1225476325.PDF",
+          "pages": "半年报9、12、23—25、58—61"
+        },
+        {
+          "bond_key": "SZ:123235",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525611.PDF",
+          "pages": "半年报7、9、13—14、43—49、93"
+        },
+        {
+          "bond_key": "SZ:123250",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225527543.PDF",
+          "pages": "半年报7、9—10、14、21、51—54"
+        },
+        {
+          "bond_key": "SZ:127044",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225503489.PDF",
+          "pages": "半年报7、12—14、39—41"
+        },
+        {
+          "bond_key": "SZ:127047",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225499873.PDF",
+          "pages": "半年报8、15—17、42—44；评级公告1"
+        },
+        {
+          "bond_key": "SZ:127069",
+          "kind": "h1",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-14/1225471529.PDF",
+          "pages": "半年报7、9、16—19、41—47"
+        },
+        {
+          "bond_key": "SH:111002",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-01/1225399328.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113625",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385362.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113646",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225380842.PDF",
+          "pages": "半年报45（评级PDF为扫描件）"
+        },
+        {
+          "bond_key": "SH:113655",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390002.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113659",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225395621.PDF",
+          "pages": "评级PDF3、17、19"
+        },
+        {
+          "bond_key": "SH:113670",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225394755.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113693",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225387114.PDF",
+          "pages": "评级结果公告PDF1"
+        },
+        {
+          "bond_key": "SH:113703",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-17/1225427540.PDF",
+          "pages": "评级PDF3；半年报48—49"
+        },
+        {
+          "bond_key": "SZ:123072",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-24/1225385208.PDF",
+          "pages": "评级PDF4"
+        },
+        {
+          "bond_key": "SZ:123154",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225390258.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123183",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225382544.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123229",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-29/1225394145.PDF",
+          "pages": "评级PDF4；半年报58"
+        },
+        {
+          "bond_key": "SZ:123235",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225389525.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:123250",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225387216.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:127044",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385901.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SZ:127047",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390443.PDF",
+          "pages": "评级结果公告PDF1"
+        },
+        {
+          "bond_key": "SZ:127069",
+          "kind": "rating",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-16/1225371250.PDF",
+          "pages": "评级PDF3"
+        },
+        {
+          "bond_key": "SH:113693",
+          "kind": "event",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-04/1225454303.PDF",
+          "pages": "原件全文"
+        },
+        {
+          "bond_key": "SH:113633",
+          "kind": "event",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-11/1225466110.PDF",
+          "pages": "原件全文"
+        },
+        {
+          "bond_key": "SZ:127047",
+          "kind": "event",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-24/1225578589.PDF",
+          "pages": "原件全文"
+        },
+        {
+          "bond_key": "SZ:123235",
+          "kind": "event",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-23/1225579742.PDF",
+          "pages": "原件全文"
+        }
+      ],
+      "split": {
+        "overview_seconds": 25,
+        "analysis_seconds": 40,
+        "optional": true
+      },
+      "slide_method": "区分机械调价、主动下修、提示、决议与承诺期限。",
+      "slide_test": "不下修是真实选择；可能赎回不是决定；亿田承诺只到12月23日",
+      "slide_conclusion": "条款改善可支持阶段安排，但不保证整个半年，也不代替经营偿债"
+    }
+  ],
+  "supplemental_facts": {
+    "te_zhi_investing_cashflow_100m": {
+      "bond_key": "SH:111002",
+      "value": -13.5870508797,
+      "unit": "亿元",
+      "period": "2026H1",
+      "label": "投资现金净额",
+      "source": {
+        "bond_key": "SH:111002",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-08/1225463398.PDF",
+        "pages": "半年报14"
+      }
+    },
+    "lake_fx_loss_yuan": {
+      "bond_key": "SH:113659",
+      "value": 388814115.8,
+      "unit": "元",
+      "period": "2026H1",
+      "source": {
+        "bond_key": "SH:113659",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225508259.PDF",
+        "pages": "半年报7"
+      }
+    },
+    "lake_deducted_ex_fx_yoy_pct": {
+      "bond_key": "SH:113659",
+      "value": -16.26,
+      "unit": "%",
+      "period": "2026H1",
+      "qualification": "公司剔汇兑、15%税率假设测算；非预测或常态利润",
+      "source": {
+        "bond_key": "SH:113659",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225508259.PDF",
+        "pages": "半年报7"
+      }
+    },
+    "lake_deposits_yuan": {
+      "bond_key": "SH:113659",
+      "value": 4911350013.59,
+      "unit": "元",
+      "period": "2026-06-30",
+      "qualification": "其他流动资产大额存单；不等于即时可用人民币",
+      "source": {
+        "bond_key": "SH:113659",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225508259.PDF",
+        "pages": "半年报108"
+      }
+    },
+    "lake_cash_short_debt_ratio": {
+      "bond_key": "SH:113659",
+      "value": 1.2,
+      "unit": "倍",
+      "period": "2026-03-31",
+      "qualification": "评级现金类资产宽于货币资金；不是T状态",
+      "source": {
+        "bond_key": "SH:113659",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225395621.PDF",
+        "pages": "评级PDF19"
+      }
+    },
+    "lake_unused_credit_100m": {
+      "bond_key": "SH:113659",
+      "value": 122.18,
+      "unit": "亿元",
+      "period": "2026-03-31",
+      "qualification": "历史未用授信，不保证T可取",
+      "source": {
+        "bond_key": "SH:113659",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225395621.PDF",
+        "pages": "评级PDF19"
+      }
+    },
+    "yi_tian_compute_revenue_10k": {
+      "bond_key": "SZ:123235",
+      "value": 2329.81,
+      "unit": "万元",
+      "period": "2026H1",
+      "source": {
+        "bond_key": "SZ:123235",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525611.PDF",
+        "pages": "半年报9、13—14"
+      }
+    },
+    "yi_tian_compute_margin_pct": {
+      "bond_key": "SZ:123235",
+      "value": -37.97,
+      "unit": "%",
+      "period": "2026H1",
+      "source": {
+        "bond_key": "SZ:123235",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525611.PDF",
+        "pages": "半年报13—14"
+      }
+    },
+    "hai_shun_operating_profit_yuan": {
+      "bond_key": "SZ:123183",
+      "value": 5237390.67,
+      "unit": "元",
+      "period": "2026H1",
+      "source": {
+        "bond_key": "SZ:123183",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225517249.PDF",
+        "pages": "半年报59"
+      }
+    },
+    "hai_shun_income_tax_yuan": {
+      "bond_key": "SZ:123183",
+      "value": 16518211.03,
+      "unit": "元",
+      "period": "2026H1",
+      "qualification": "递延所得税费用抬升放大净亏，不能据归母亏损直接判主营亏损",
+      "source": {
+        "bond_key": "SZ:123183",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225517249.PDF",
+        "pages": "半年报19、59"
+      }
+    },
+    "hai_shun_gross_margin_pct": {
+      "bond_key": "SZ:123183",
+      "value": 20.73,
+      "unit": "%",
+      "period": "2026H1",
+      "source": {
+        "bond_key": "SZ:123183",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225517249.PDF",
+        "pages": "半年报18"
+      }
+    },
+    "hai_shun_prior_gross_margin_pct": {
+      "bond_key": "SZ:123183",
+      "value": 22.3,
+      "unit": "%",
+      "period": "2025H1",
+      "source": {
+        "bond_key": "SZ:123183",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225517249.PDF",
+        "pages": "半年报18"
+      }
+    }
+  },
+  "full_pool_summary": {
+    "seconds": 30,
+    "title": "全池A结论与交给B的问题",
+    "classification": [
+      {
+        "label": "经营支持须检验买价",
+        "bond_keys": [
+          "SH:111002",
+          "SH:113633"
+        ]
+      },
+      {
+        "label": "修复或现金缓冲须核验持续性",
+        "bond_keys": [
+          "SH:113655",
+          "SH:113659",
+          "SH:113703",
+          "SZ:123183",
+          "SZ:123229",
+          "SZ:123250",
+          "SZ:127044",
+          "SZ:127069"
+        ]
+      },
+      {
+        "label": "经营或信用负证仍强",
+        "bond_keys": [
+          "SH:113625",
+          "SH:113646",
+          "SH:113670",
+          "SH:113693",
+          "SZ:123154",
+          "SZ:123235",
+          "SZ:127047"
+        ]
+      },
+      {
+        "label": "期限改变策略",
+        "bond_keys": [
+          "SZ:123072"
+        ]
+      }
+    ],
+    "spoken": "全池A研究保留三类证据：经营增长需要价格补偿，修复和现金缓冲需要检验持续性，经营或信用负证需要独立约束；乐歌还受实际到期限制。分类不是评分或推荐名单。接下来B回答现价反映了多少经营预期、模型参考经什么检验，以及真实持有路径是否符合我们的下行定位。",
+    "sources": [
+      {
+        "bond_key": "SH:111002",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-08/1225463398.PDF",
+        "pages": "半年报6、10—14、45—47、93"
+      },
+      {
+        "bond_key": "SH:113625",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-17/1225476065.PDF",
+        "pages": "半年报6、19、24、50—52"
+      },
+      {
+        "bond_key": "SH:113633",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-22/1225493227.PDF",
+        "pages": "半年报6—7、11、15—16、62—65"
+      },
+      {
+        "bond_key": "SH:113646",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-01/1225451568.PDF",
+        "pages": "半年报6、9、13、19—20、45、47—49"
+      },
+      {
+        "bond_key": "SH:113655",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525504.PDF",
+        "pages": "半年报6、14—19、56—58"
+      },
+      {
+        "bond_key": "SH:113659",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225508259.PDF",
+        "pages": "半年报7、108、144—145"
+      },
+      {
+        "bond_key": "SH:113670",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225507089.PDF",
+        "pages": "半年报5、10—14、16、39—41"
+      },
+      {
+        "bond_key": "SH:113693",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225520523.PDF",
+        "pages": "半年报6、25、45、74—76"
+      },
+      {
+        "bond_key": "SH:113703",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225501451.PDF",
+        "pages": "半年报7、14、18、48—53"
+      },
+      {
+        "bond_key": "SZ:123072",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225530258.PDF",
+        "pages": "半年报7、9—18、19、50—52"
+      },
+      {
+        "bond_key": "SZ:123154",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225524016.PDF",
+        "pages": "半年报7、9—10、17—18、39、47—52"
+      },
+      {
+        "bond_key": "SZ:123183",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225517249.PDF",
+        "pages": "半年报7、18—20、54—56、59—61"
+      },
+      {
+        "bond_key": "SZ:123229",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-18/1225476325.PDF",
+        "pages": "半年报9、12、23—25、58—61"
+      },
+      {
+        "bond_key": "SZ:123235",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525611.PDF",
+        "pages": "半年报7、9、13—14、43—49、93"
+      },
+      {
+        "bond_key": "SZ:123250",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225527543.PDF",
+        "pages": "半年报7、9—10、14、21、51—54"
+      },
+      {
+        "bond_key": "SZ:127044",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225503489.PDF",
+        "pages": "半年报7、12—14、39—41"
+      },
+      {
+        "bond_key": "SZ:127047",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225499873.PDF",
+        "pages": "半年报8、15—17、42—44；评级公告1"
+      },
+      {
+        "bond_key": "SZ:127069",
+        "kind": "h1",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-14/1225471529.PDF",
+        "pages": "半年报7、9、16—19、41—47"
+      },
+      {
+        "bond_key": "SH:111002",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-07-01/1225399328.PDF",
+        "pages": "评级PDF3"
+      },
+      {
+        "bond_key": "SH:113625",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385362.PDF",
+        "pages": "评级PDF3"
+      },
+      {
+        "bond_key": "SH:113646",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225380842.PDF",
+        "pages": "半年报45（评级PDF为扫描件）"
+      },
+      {
+        "bond_key": "SH:113655",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390002.PDF",
+        "pages": "评级PDF3"
+      },
+      {
+        "bond_key": "SH:113659",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225395621.PDF",
+        "pages": "评级PDF3、17、19"
+      },
+      {
+        "bond_key": "SH:113670",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-30/1225394755.PDF",
+        "pages": "评级PDF3"
+      },
+      {
+        "bond_key": "SH:113693",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225387114.PDF",
+        "pages": "评级结果公告PDF1"
+      },
+      {
+        "bond_key": "SH:113703",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-07-17/1225427540.PDF",
+        "pages": "评级PDF3；半年报48—49"
+      },
+      {
+        "bond_key": "SZ:123072",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-24/1225385208.PDF",
+        "pages": "评级PDF4"
+      },
+      {
+        "bond_key": "SZ:123154",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225390258.PDF",
+        "pages": "评级PDF3"
+      },
+      {
+        "bond_key": "SZ:123183",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-23/1225382544.PDF",
+        "pages": "评级PDF3"
+      },
+      {
+        "bond_key": "SZ:123229",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-29/1225394145.PDF",
+        "pages": "评级PDF4；半年报58"
+      },
+      {
+        "bond_key": "SZ:123235",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-26/1225389525.PDF",
+        "pages": "评级PDF3"
+      },
+      {
+        "bond_key": "SZ:123250",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225387216.PDF",
+        "pages": "评级PDF3"
+      },
+      {
+        "bond_key": "SZ:127044",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-25/1225385901.PDF",
+        "pages": "评级PDF3"
+      },
+      {
+        "bond_key": "SZ:127047",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-27/1225390443.PDF",
+        "pages": "评级结果公告PDF1"
+      },
+      {
+        "bond_key": "SZ:127069",
+        "kind": "rating",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-06-16/1225371250.PDF",
+        "pages": "评级PDF3"
+      }
+    ]
+  }
+}

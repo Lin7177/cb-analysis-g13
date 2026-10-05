@@ -41,6 +41,12 @@
 - **展示口径**（= `results/weights/weights.json`，p31/p33 权重行与 p05 显示值）：D1 12.5804709% / D2 2.2720227% / D3 47.8588418% / D4 7.3731576% / D5 23.1787551% / D6 6.7367519% —— resid 仅作独立诊断
 - `compose()` 默认用 weights.json（展示口径）；**复现 p32 综合列须用 `compose(with_weights=综合口径)`**，两套权重均出自 B0 赋权管线，差异为"resid 是否入回归"（老仓库 B4赋权讲解方案.md §54 已记录）
 
+## 原始文件找回（2026-10-05 补充）
+
+- **`a_results_original.csv`**：自老仓库 git 提交 `eb3b64a` 找回的 **57 列完整版** work/A/results.csv——direction 之外含财务三表、证据原文、机制、条件、pdf 页码引用等全部打分依据列。与 `a_results_recovered.csv` 交叉验证：**direction / rating / rating_previous 18/18×3 完全一致**（冻结矩阵重建与 git 原件两条独立路径互证）
+- `a_notes.json`、`a_presentation.json`：同期找回的 A线人工解释层
+- **采集能力恢复**：`scripts/b1_collect_terms.py`（B1_verified 公告证据 + terms_verified 的采集器，自 git `b24c242` 字节级恢复）、`scripts/a_collect_research.py`（A线财报/公告采集器，自 git `eb3b64a` 恢复）——两脚本内部为老布局路径，运行前需适配（头注在案）；证据缓存本体按决策留在老仓库 `data/cache/`，未入库
+
 ## 已知怪癖（继承自原始管线，保持行为一致，未修复）
 
 `O_MAP` 中 `('中性',5.2)` 排在 `('中性偏负',3.5)` 之前，startswith 匹配使"中性偏负…"开头的券（欧22、乐歌）经营分得 5.2 而非 3.5——新老两套 compose 同此行为，冻结数字含此口径；改动将破坏与 p32 的一致性。
