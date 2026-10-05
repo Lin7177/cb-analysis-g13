@@ -4,10 +4,10 @@
     "created": "2026-10-04",
     "extraction_method": "python-pptx 1.0.2 遍历 shape，读取页内 20x10 表格全部单元格文本；两份 PPT 均逐格比对（cell diffs = 0）",
     "sources": {
-      "old_v6_pptx": "D:\\git-windows\\Projects\\course-project\\bond-investment\\work\\v6\\可转换债券投资分析——第13组课堂汇报（总分总重构版）.pptx",
+      "old_v6_pptx": "老仓库 bond-investment / work/v6/可转换债券投资分析——第13组课堂汇报（总分总重构版）.pptx（未随迁移，冻结提取时在库）",
       "old_v6_slide": 31,
       "old_v6_total_slides": 35,
-      "new_deck_pptx": "D:\\git-windows\\Projects\\course-project\\cb-analysis-g13\\deck\\可转债全量版.pptx",
+      "new_deck_pptx": "仓库内 deck/可转债全量版.pptx",
       "new_deck_slide": 32,
       "new_deck_total_slides": 36,
       "cross_check": "两版该表 20 行 × 10 列逐格文本完全一致（0 处差异）；仅页脚页码/装饰文本不同"

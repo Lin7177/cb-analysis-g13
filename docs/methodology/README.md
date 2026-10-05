@@ -6,6 +6,7 @@
 docs/
 ├── methodology/
 │   ├── 维度体系章程.md              ← v3.0 现行：D1–D6 体系/权重方法/红线与两步决策/模块编号
+│   ├── 数字勘误与依据边界.md        ← 主PPT数字 ↔ 仓库证据对账（推送前审计产出，逐条处置）
 │   ├── 研究框架v2-终稿对齐说明.md    ← 审计结论：框架原文哪些成立、哪些被终稿取代
 │   ├── 交割与验收契约-v0.md         ← 文件命名/版本/字段契约（历史流程契约，work/ 路径已废弃）
 │   ├── README.md                    ← 本文件
@@ -37,6 +38,6 @@ b-quant 管线（799券面板 → pricing 定价核 → B0 权重反推[FM+RankI
 ## 已知缺口（诚实声明，下一阶段处理）
 
 1. ~~compose 重算路径断裂~~ **已闭合（2026-10-05）**：三份失传评分输入已恢复至 `b-quant/data/inputs/`（恢复脚本 `b1_price_bonds.py`/`b1_build_base.py`/`b2_linkage.py`，来历与验证见 [PROVENANCE.md](../../b-quant/data/inputs/PROVENANCE.md)）；compose 输出与主PPT p32 矩阵 18/18 吻合。注意 p32 综合列与 weights.json 分属综合/展示双口径（V6 已知设计，见 PROVENANCE）
-2. **workbenches 目录编号与主PPT模块编号存在历史错位**（见章程 §五；各脚本已加历史冻结头注）
+2. **workbenches 目录编号与主PPT模块编号存在历史错位**（见章程 §五；冻结说明见 workbenches/README 头注，其 run.py 未逐一加注）
 3. **公告证据原件不入库**：143MB 的 B1_verified 公告 PDF 留在老仓库 `data/cache/`，如需证据链可由 `b-quant/src/bquant/collect/` 采集脚本重新获取
 4. 旧 G0 流程文档（可执行方案、报告蓝图、A负责人任务说明等）留在老仓库 `project_docs/`，未迁移

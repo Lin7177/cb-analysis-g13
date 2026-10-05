@@ -23,7 +23,7 @@ Method recovered from surviving evidence:
   by B2/compose is recovered here.
 - SH:113703 翔26转债 has only 61 paired bars (60 returns): no 120-day window, so
   beta_120/r2_120 are NaN and test_model_beats_mean is False. Historical B3
-  excluded it (主PPT p26 "翔26无120日窗口不入图"); compose.py falls back to
+  excluded it (主PPT p28 "翔26无120日窗口不入图"); compose.py falls back to
   D4=5.0 with empty link_note either way.
 
 Outputs data/inputs/b3_linkage_recovered.csv (bond_key, beta_120, r2_120,
